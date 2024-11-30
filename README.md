@@ -1,59 +1,77 @@
-# Sebastianrdz
+# sebastianrdz.com
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+This repository contains the code for my personal portfolio website. It showcases my work, skills, and projects, while also providing visitors with links to contact me or view my profiles on LinkedIn and GitHub.
 
-## Development server
+## 🌟 Features
 
-To start a local development server, run:
+- **Responsive Design**: Fully optimized for mobile and desktop devices.
+- **Modern UI**: Clean and user-friendly interface using Bootstrap.
+- **Dynamic Content**: Highlights my projects and skills with interactive elements.
+- **Contact Links**: Easy access to LinkedIn, GitHub, and email.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🚀 Technologies Used
 
-## Code scaffolding
+- **Angular**: Framework for building the application.
+- **Bootstrap**: For responsive design and styling.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🛠️ Installation
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Follow these steps to set up the project on your local machine:
 
-```bash
-ng generate --help
-```
+1. **Clone the repository**:
+   ```
+      git clone https://github.com/your-username/sebastianrdz.git
+      cd sebastianrdz
+   ```
+2. **Install dependencies**:
+   Make sure you have [Node.js](https://nodejs.org/) and Angular CLI installed:
+   ```
+      npm install
+   ```
+3. **Run the development server**:
+   ```
+      ng serve
+   ```
 
-## Building
+4. **Build for production**:
+   To generate the optimized build for deployment:
+   ```
+      ng build --configuration production
+   ```
+   The output will be in the dist/ folder.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🌐 Deployment
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+1. **Upload Files**:
+   Copy the contents of the dist/sebastianrdz folder to your public_html directory on the server.
 
-## Running unit tests
+2. **Update Base Href**:
+   Ensure the base href in the index.html file points to the correct path:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+   ```
+      <base href="./">
+   ```
 
-```bash
-ng test
-```
+3. **Access the Website**:
+   Visit your domain to see the live website.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 👤 Author
 
-```bash
-ng e2e
-```
+**Sebastián Rodríguez**
+- [LinkedIn](https://www.linkedin.com/in/sebastian-rodriguez-zavala/)
+- [GitHub](https://github.com/srodzav)
+- [Email](mailto:contact@sebastianrdz.com)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## 📝 License
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is for personal use and is not licensed for commercial distribution.

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-5 pt-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Sebastian Rodriguez</a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>    
+
+        <div class="collapse navbar-collapse border-bottom-when-collapsed" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="/now"><i class="bi bi-calendar-check-fill"></i> Now</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="/projects"><i class="bi bi-file-code-fill"></i> Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" (click)="resume()" style="cursor:pointer;"><i class="bi bi-file-earmark-person-fill"></i> Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="/about-me"><i class="bi bi-person-vcard-fill"></i> About me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

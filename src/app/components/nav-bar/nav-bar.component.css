@@ -1,0 +1,14 @@
+.navbar {
+    background-color: #F0F0F0 !important;
+}
+
+.collapse {
+    transition: height 0.5s ease-in-out;
+}  
+
+.border-bottom-when-collapsed.show {
+    border-top: 1px rgb(190, 190, 190) solid;
+    /* border-top: 2px solid #ccc;  */
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}

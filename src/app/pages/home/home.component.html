@@ -1,0 +1,57 @@
+<app-nav-bar />
+<div class="container mt-5 px-5 border-profile">
+    <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 side-border">
+            <img src="/assets/images/cv.jpg" class="img-profile img-fluid">
+            <div class="container">
+                <div class="row mt-3 justify-content-center">
+                    <div class="col-md-auto col-12 text-center mb-2">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" (click)="email()">
+                            <i class="bi bi-envelope-at-fill"></i> email
+                        </button>
+                    </div>
+                    <div class="col-md-auto col-12 text-center mb-2">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" (click)="goToLink('https://www.linkedin.com/in/sebastian-rodriguez-zavala/')">
+                            <i class="bi bi-linkedin"></i> linkedIn
+                        </button>
+                    </div>
+                    <div class="col-md-auto col-12 text-center mb-2">
+                        <button type="button" class="btn btn-outline-dark btn-sm w-100" (click)="goToLink('https://github.com/srodzav')">
+                            <i class="bi bi-github"></i> github
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="info" class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <h2 class="text-dark"><b>Sebastian Rodriguez</b></h2>
+            <br>
+            <p>I am a Software Developer who enjoys working on web development and solving challenges with creative solutions.</p>
+            <p>Currently contributing as a Full Stack Developer at Bentho Automation, while staying open to exploring opportunities for growth and innovation.</p>
+            <br>
+            <h2 class="text-dark"><b>Skills</b></h2>
+            <br>
+            <p>As a Software Developer, my goal is to find the right balance between frameworks that allow me to create applications in the most efficient, scalable, and user-friendly way possible.</p>
+            <p>I have experience with <b>JavaScript</b>, <b>TypeScript</b>, and <b>PHP</b>. These languages have been fundamental in my projects.</p>
+            <p>Regarding frameworks, I've worked with <b>Angular</b> and <b>React</b> to build responsive and interactive user interfaces, <b>Node.js</b> for robust server-side applications and APIs, and <b>Laravel</b> for efficient backend systems.</p>
+        </div>
+
+    </div>
+
+    <div class="text-center pt-4">
+        <small>{{ currentTime }} Mexico City (GMT-6) Timezone</small>
+    </div>
+
+    <div class="card mt-5">
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>It works on my machine.</p>
+                <footer class="blockquote-footer"><cite title="Every developer ever">Every developer ever</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+
+</div>
+<app-footer />

@@ -1,0 +1,4 @@
+<p>Currently I'm learning and improving my skills in ReactJS, by working on side projects.</p>
+<p>Also, I'm fixing bugs in my GitHub projects and translating them to prepare for deploy on this website.</p>
+<p>I have a couple of ideas for more projects. Stay tuned.</p>
+<p><small>written 29/11/2024.</small></p>

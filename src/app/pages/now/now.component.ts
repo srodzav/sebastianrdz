@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-now',
@@ -7,6 +8,17 @@ import { Component } from '@angular/core';
   templateUrl: './now.component.html',
   styleUrl: './now.component.css'
 })
-export class NowComponent {
+
+export class NowComponent implements OnInit {
+  
+  currentText: string = '';
+
+  constructor(private httpClient: HttpClient) {
+  }
+  
+  ngOnInit(): void {
+    this.httpClient.get('assets/files/now.txt', {responseType: 'text'})
+    .subscribe(data => this.currentText = data);
+  }
 
 }

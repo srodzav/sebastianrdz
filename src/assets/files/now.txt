@@ -1,4 +1,4 @@
-<p>Currently I'm learning and improving my skills in ReactJS, by working on side projects.</p>
-<p>Also, I'm fixing bugs in my GitHub projects and translating them to prepare for deploy on this website.</p>
-<p>I have a couple of ideas for more projects. Stay tuned.</p>
-<p><small>written 29/11/2024.</small></p>
+<p>I'm starting a new job as a Full Stack Developer with Angular and .NET.</p>
+<p>For now, I'll be fully focused on that, while working on side projects in my free time.</p>
+<p><b>Note:</b> God knows how long it will take for Spotify to approve my app so people can log in using their accounts.</p>
+<p><small>written 24/02/2024.</small></p>

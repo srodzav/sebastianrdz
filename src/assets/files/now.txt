@@ -1,4 +1,4 @@
-<p>I'm starting a new job as a Full Stack Developer with Angular and .NET.</p>
+<p>Currently improving my skills with Angular and .NET.</p>
 <p>For now, I'll be fully focused on that, while working on side projects in my free time.</p>
-<p><b>Note:</b> God knows how long it will take for Spotify to approve my app so people can log in using their accounts.</p>
-<p><small>written 24/02/2024.</small></p>
+<p>Also, I'm planning to host the Smart Notes app — I’d really love to see it running as a live demo.</p>
+<p><small>written 11/04/2024.</small></p>

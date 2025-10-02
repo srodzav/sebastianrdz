@@ -1,4 +1,4 @@
-<p>Currently improving my skills with Angular and .NET.</p>
-<p>For now, I'll be fully focused on that, while working on side projects in my free time.</p>
-<p>Also, I'm planning to host the Smart Notes app — I’d really love to see it running as a live demo.</p>
-<p><small>written 11/04/2024.</small></p>
+<p>I'm reworking my projects—leaving some behind and improving others.</p>
+<p>I'm still practicing .NET.</p>
+<p>For now, I'm focused on that.</p>
+<p><small>written 02/10/2025.</small></p>

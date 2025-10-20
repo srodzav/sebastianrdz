@@ -28,14 +28,19 @@ jobs:
       - name: Build Angular app
         run: npm run build -- --configuration production
 
-      # 5️⃣ Subir al hosting (tu dominio principal)
+      # 5️⃣ Mover el contenido de dist/sebastianrdz/browser/ a dist/sebastianrdz/
+      - name: Move browser build to dist root
+        run: |
+          if [ -d "dist/sebastianrdz/browser" ]; then
+            cp -r dist/sebastianrdz/browser/* dist/sebastianrdz/
+          fi
+
+      # 6️⃣ Subir al hosting (tu dominio principal)
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # 👇 Ajusta este nombre con el que se genera tu build
           local-dir: dist/sebastianrdz/
-          # 👇 Este es el destino exacto de tu dominio principal
           server-dir: /domains/sebastianrdz.com/public_html/

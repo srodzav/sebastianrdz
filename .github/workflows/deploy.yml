@@ -36,7 +36,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           # 👇 Ajusta este nombre con el que se genera tu build
-          local-dir: dist/browser/
+          local-dir: dist/sebastianrdz/
           # 👇 Este es el destino exacto de tu dominio principal
           server-dir: /domains/sebastianrdz.com/public_html/
-          strip-components: 1

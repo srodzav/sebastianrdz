@@ -3,14 +3,14 @@ name: Deploy Angular App to Neubox (FTP)
 on:
   push:
     branches:
-      - main    # o master, si tu rama principal se llama así
+      - main  # o master si tu rama principal se llama así
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Traer el código del repo
+      # 1️⃣ Descargar tu repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -24,18 +24,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # 4️⃣ Construir la app Angular (modo producción)
+      # 4️⃣ Build de Angular (modo producción)
       - name: Build Angular app
         run: npm run build -- --configuration production
 
-      # 5️⃣ Subir el build a Neubox via FTP
+      # 5️⃣ Subir al hosting (tu dominio principal)
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # 👇 Cambia este nombre si tu carpeta en dist tiene otro
+          # 👇 Ajusta este nombre con el que se genera tu build
           local-dir: dist/sebastianrdz/
-          # 👇 Asegúrate de que esta ruta exista en tu hosting
-          server-dir: /public_html/
+          # 👇 Este es el destino exacto de tu dominio principal
+          server-dir: /domains/sebastianrdz.com/public_html/

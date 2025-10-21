@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ThemeService } from '../../services/theme.service';
+import { Subscription } from 'rxjs';
 
 declare const $: any;
 
@@ -10,16 +12,24 @@ declare const $: any;
     styleUrl: './home.component.css',
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
 
     currentTime: string = '';
+    isDarkTheme: boolean = false;
+    private themeSubscription: Subscription = new Subscription();
+
+    constructor(private themeService: ThemeService) {}
 
     ngOnInit(): void {
         this.updateTime();
+        setInterval(() => this.updateTime(), 1000);
+        this.themeSubscription = this.themeService.isDarkMode$.subscribe(isDark => {
+            this.isDarkTheme = isDark;
+        });
+    }
 
-        setInterval(() => {
-        this.updateTime();
-        }, 1000);
+    ngOnDestroy(): void {
+        this.themeSubscription.unsubscribe();
     }
 
     updateTime(): void {
@@ -49,5 +59,9 @@ export class HomeComponent implements OnInit {
 
     goToLink(url: string) {
         window.open(url, '_blank');
+    }
+
+    get buttonClass(): string {
+        return this.isDarkTheme ? 'btn btn-outline-light btn-sm w-100' : 'btn btn-outline-dark btn-sm w-100';
     }
 }

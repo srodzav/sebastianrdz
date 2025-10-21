@@ -40,6 +40,26 @@ button {
     border-color: #ccd7fd;
 }
 
+.btn-teal {
+    color: black;
+    background-color: #00e5c4;
+}
+
+.btn-teal:hover {
+    color: black;
+    background-color: #66fff9;
+}
+
+.btn-outline-teal {
+    color: white;
+    border-color: #00e5c4;
+}
+
+.btn-outline-teal:hover {
+    color: white;
+    border-color: #66fff9;
+}
+
 @media (max-width: 768px) {
 
     img {

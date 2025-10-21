@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2, Inject } from '@angular/core';
+import { ThemeService } from '../../services/theme.service';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-nav-bar',
@@ -11,9 +13,23 @@ export class NavBarComponent implements OnInit {
 
   isDarkMode: boolean = false;
 
+  constructor(
+    private renderer: Renderer2,
+    @Inject(DOCUMENT) private document: Document,
+    private themeService: ThemeService
+  ) {}
+
   ngOnInit() {
-    this.isDarkMode = localStorage.getItem('darkMode') === 'true';
-    this.updateBodyClass();
+    this.themeService.isDarkMode$.subscribe(isDark => {
+      this.isDarkMode = isDark;
+      this.updateTheme();
+    });
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        this.themeService.setTheme(e.matches);
+      }
+    });
   }
 
   resume() : void {
@@ -21,18 +37,24 @@ export class NavBarComponent implements OnInit {
   }
 
   toggleTheme() : void {
-    this.isDarkMode = !this.isDarkMode;
-    localStorage.setItem('darkMode', this.isDarkMode.toString());
-    this.updateBodyClass();
+    this.themeService.toggleTheme();
   }
 
-  updateBodyClass(): void {
+  private updateTheme(): void {
+    const htmlElement = this.document.documentElement;
+    
     if (this.isDarkMode) {
-      document.body.classList.add('bg-dark', 'text-light');
-      document.body.classList.remove('bg-light', 'text-dark');
+      this.renderer.setAttribute(htmlElement, 'data-bs-theme', 'dark');
+      this.renderer.addClass(this.document.body, 'bg-dark');
+      this.renderer.addClass(this.document.body, 'text-light');
+      this.renderer.removeClass(this.document.body, 'bg-light');
+      this.renderer.removeClass(this.document.body, 'text-dark');
     } else {
-      document.body.classList.add('bg-light', 'text-dark');
-      document.body.classList.remove('bg-dark', 'text-light');
+      this.renderer.setAttribute(htmlElement, 'data-bs-theme', 'light');
+      this.renderer.addClass(this.document.body, 'bg-light');
+      this.renderer.addClass(this.document.body, 'text-dark');
+      this.renderer.removeClass(this.document.body, 'bg-dark');
+      this.renderer.removeClass(this.document.body, 'text-light');
     }
   }
 

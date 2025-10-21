@@ -4,7 +4,7 @@
   <div class="row justify-content-center g-3">
     <!-- Tomasa3D -->
     <div class="col-12 col-md-7">
-      <div class="card border-dark h-100 w-100">
+      <div [class]="cardBorderClass">
         <div class="row g-0">
           <div class="col-lg-4">
             <img
@@ -30,14 +30,14 @@
               <div class="d-flex justify-content-start gap-2 pt-4">
                 <button
                   type="button"
-                  class="btn btn-cornflow"
+                  [class]="primaryButtonClass"
                   (click)="goToLink('https://tomasa3d.sebastianrdz.com')"
                 >
                   Live Demo <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button
                   type="button"
-                  class="btn btn-outline-cornflow"
+                  [class]="secondaryButtonClass"
                   (click)="goToLink('https://github.com/srodzav/tomasa3D')"
                 >
                   View Source <i class="bi bi-github"></i>
@@ -51,7 +51,7 @@
 
     <!-- Denue -->
     <div class="col-12 col-md-7">
-      <div class="card border-dark h-100 w-100">
+      <div [class]="cardBorderClass">
         <div class="row g-0">
           <div class="col-lg-4">
             <img
@@ -74,14 +74,14 @@
               <div class="d-flex justify-content-start gap-2 pt-4">
                 <button
                   type="button"
-                  class="btn btn-cornflow"
+                  [class]="primaryButtonClass"
                   (click)="goToLink('https://denue.sebastianrdz.com')"
                 >
                   Live Demo <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button
                   type="button"
-                  class="btn btn-outline-cornflow"
+                  [class]="secondaryButtonClass"
                   (click)="goToLink('https://github.com/srodzav/inegi')"
                 >
                   View Source <i class="bi bi-github"></i>
@@ -95,7 +95,7 @@
 
     <!-- Skull 3D -->
     <div class="col-12 col-md-7">
-      <div class="card border-dark h-100 w-100">
+      <div [class]="cardBorderClass">
         <div class="row g-0">
           <div class="col-lg-4">
             <img
@@ -120,14 +120,14 @@
               <div class="d-flex justify-content-start gap-2 pt-4">
                 <button
                   type="button"
-                  class="btn btn-cornflow"
+                  [class]="primaryButtonClass"
                   (click)="goToLink('https://kannssai.sebastianrdz.com')"
                 >
                   Live Demo <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button
                   type="button"
-                  class="btn btn-outline-cornflow"
+                  [class]="secondaryButtonClass"
                   (click)="goToLink('https://github.com/srodzav/skull3d')"
                 >
                   View Source <i class="bi bi-github"></i>
@@ -141,7 +141,7 @@
 
     <!-- Movie Reviews -->
     <div class="col-12 col-md-7">
-      <div class="card border-dark h-100 w-100">
+      <div [class]="cardBorderClass">
         <div class="row g-0">
           <div class="col-lg-4">
             <img
@@ -166,14 +166,14 @@
               <div class="d-flex justify-content-start gap-2 pt-4">
                 <button
                   type="button"
-                  class="btn btn-cornflow"
+                  [class]="primaryButtonClass"
                   (click)="goToLink('https://reviews.sebastianrdz.com')"
                 >
                   Live Demo <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button
                   type="button"
-                  class="btn btn-outline-cornflow"
+                  [class]="secondaryButtonClass"
                   (click)="goToLink('https://github.com/srodzav/reviews')"
                 >
                   View Source <i class="bi bi-github"></i>
@@ -187,7 +187,7 @@
 
     <!-- Currency Converter -->
     <div class="col-12 col-md-7">
-      <div class="card border-dark h-100 w-100">
+      <div [class]="cardBorderClass">
         <div class="row g-0">
           <div class="col-lg-4">
             <img
@@ -214,14 +214,14 @@
               <div class="d-flex justify-content-start gap-2 pt-4">
                 <button
                   type="button"
-                  class="btn btn-cornflow"
+                  [class]="primaryButtonClass"
                   (click)="goToLink('https://currency.sebastianrdz.com')"
                 >
                   Live Demo <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button
                   type="button"
-                  class="btn btn-outline-cornflow"
+                  [class]="secondaryButtonClass"
                   (click)="
                     goToLink('https://github.com/srodzav/currency-converter')
                   "

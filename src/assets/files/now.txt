@@ -1,4 +1,4 @@
 <p>I'm reworking my projects—leaving some behind and improving others.</p>
-<p>I'm still practicing .NET.</p>
+<p>I'm still practicing <b>.NET</b>.</p>
 <p>For now, I'm focused on that.</p>
 <p><small>written 02/10/2025.</small></p>

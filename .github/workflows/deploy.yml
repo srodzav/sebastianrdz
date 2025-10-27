@@ -52,5 +52,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist/sebastianrdz/
+          local-dir: deploy-temp/
           server-dir: /domains/sebastianrdz.com/public_html/

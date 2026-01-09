@@ -1,12 +1,119 @@
-/* You can add global styles to this file, and also import other style files */
+/* CSS Custom Properties (Variables) */
+:root {
+    /* Light Mode Colors */
+    --primary-color: #0000ff;
+    --primary-rgb: 0, 0, 255;
+    --primary-hover: #3636ff;
+    --primary-dark: #555555;
+    --accent-color: #001eff;
+    --accent-rgb: 0, 30, 255;
+    
+    /* Backgrounds */
+    --bg-gradient-start: rgba(0, 0, 0, 0.02);
+    --bg-gradient-end: rgba(0, 0, 0, 0.01);
+    --bg-gradient: linear-gradient(135deg, #000000, #333333);
+    --bg-gradient-light: linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0%, transparent 50%);
+    --bg-gradient-medium: linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.02) 100%);
+    --bg-gradient-strong: linear-gradient(135deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.05) 100%);
+    
+    /* Cards */
+    --card-bg: #ffffff;
+    --card-bg-gradient: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    --card-bg-hover: rgba(0, 0, 0, 0.05);
+    
+    /* Borders */
+    --border-color: rgba(0, 0, 0, 0.12);
+    --border-color-light: rgba(0, 0, 0, 0.1);
+    --border-color-medium: rgba(0, 0, 0, 0.15);
+    --border-color-strong: rgba(0, 0, 0, 0.2);
+    --border-hover-color: rgba(0, 0, 0, 0.25);
+    
+    /* Text */
+    --text-primary: #000000;
+    --text-secondary: rgba(0, 0, 0, 0.8);
+    --text-switcher: #ffffff;
+
+    /* Shadows */
+    --shadow-color: 0 0 20px rgba(0, 0, 0, 0.1);
+    --shadow-color-medium: 0 0 20px rgba(0, 0, 0, 0.2);
+    --shadow-medium: 0 4px 15px rgba(0, 0, 0, 0.15);
+    --shadow-strong: 0 8px 25px rgba(0, 0, 0, 0.2);
+    --shadow-extra: 0 16px 40px rgba(0, 0, 0, 0.25);
+    
+    /* Elements with opacity */
+    --element-bg-light: rgba(0, 0, 0, 0.03);
+    --element-bg-medium: rgba(0, 0, 0, 0.05);
+    --element-bg-strong: rgba(0, 0, 0, 0.08);
+}
+
+[data-bs-theme="dark"] {
+    /* Dark Mode Colors */
+    --primary-color: #00ff88;
+    --primary-rgb: 0, 255, 136;
+    --primary-hover: #00ff88;
+    --primary-dark: #00ff8c;
+    --accent-color: #00ff88;
+    --accent-rgb: 0, 255, 136;
+    
+    /* Backgrounds */
+    --bg-gradient-start: rgba(0, 255, 136, 0.05);
+    --bg-gradient-end: rgba(0, 255, 136, 0.01);
+    --bg-gradient: linear-gradient(135deg, #00ff88, #00cc6f);
+    --bg-gradient-light: linear-gradient(135deg, rgba(0, 255, 136, 0.03) 0%, transparent 50%);
+    --bg-gradient-medium: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 255, 136, 0.03) 100%);
+    --bg-gradient-strong: linear-gradient(135deg, rgba(0, 255, 136, 0.18) 0%, rgba(0, 255, 136, 0.08) 100%);
+    
+    /* Cards */
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-bg-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    --card-bg-hover: rgba(0, 255, 136, 0.1);
+    
+    /* Borders */
+    --border-color: rgba(0, 255, 136, 0.2);
+    --border-color-light: rgba(0, 255, 136, 0.15);
+    --border-color-medium: rgba(0, 255, 136, 0.25);
+    --border-color-strong: rgba(0, 255, 136, 0.3);
+    --border-hover-color: rgba(0, 255, 136, 0.4);
+    
+    /* Text */
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.8);
+    --text-switcher: #000000;
+
+    /* Shadows */
+    --shadow-color: 0 0 20px rgba(0, 255, 136, 0.3);
+    --shadow-color-medium: 0 0 20px rgba(0, 255, 136, 0.4);
+    --shadow-medium: 0 4px 15px rgba(0, 255, 136, 0.2);
+    --shadow-strong: 0 8px 25px rgba(0, 255, 136, 0.25);
+    --shadow-extra: 0 16px 40px rgba(0, 255, 136, 0.3);
+    
+    /* Elements with opacity */
+    --element-bg-light: rgba(0, 255, 136, 0.05);
+    --element-bg-medium: rgba(0, 255, 136, 0.08);
+    --element-bg-strong: rgba(0, 255, 136, 0.1);
+}
+
+/* Global Bold Text Colors */
 [data-bs-theme="dark"] p b {
-    color: #00ff88 !important;
+    color: var(--primary-color) !important;
 }
 
 [data-bs-theme="dark"] li b {
-    color: #00ff88 !important;
+    color: var(--primary-color) !important;
 }
 
 [data-bs-theme="dark"] h5 b {
-    color: #00ff88 !important;
+    color: var(--primary-color) !important;
+}
+
+[data-bs-theme="light"] p b {
+    color: var(--accent-color) !important;
+}
+
+[data-bs-theme="light"] li b {
+    color: var(--accent-color) !important;
+}
+
+[data-bs-theme="light"] h5 b {
+    color: var(--accent-color) !important;
 }

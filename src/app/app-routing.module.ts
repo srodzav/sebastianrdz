@@ -7,8 +7,9 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'now', component: NowComponent },
+  // changed to landing page style
+  // { path: 'projects', component: ProjectsComponent },
+  // { path: 'now', component: NowComponent },
   { path: 'about-me', component: AboutMeComponent }
 ];
 

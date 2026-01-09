@@ -17,6 +17,14 @@ export class HomeComponent implements OnInit, OnDestroy {
     currentTime: string = '';
     isDarkTheme: boolean = false;
     private themeSubscription: Subscription = new Subscription();
+    
+    // Typewriter animation
+    typewriterText: string = '';
+    private titles: string[] = ['Software Developer', 'Full Stack Developer', 'Software Engineer'];
+    private currentTitleIndex: number = 0;
+    private currentCharIndex: number = 0;
+    private isDeleting: boolean = false;
+    private typewriterSpeed: number = 100;
 
     constructor(private themeService: ThemeService) {}
 
@@ -26,6 +34,47 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.themeSubscription = this.themeService.isDarkMode$.subscribe(isDark => {
             this.isDarkTheme = isDark;
         });
+        this.startTypewriter();
+    }
+
+    startTypewriter(): void {
+        this.typeWriter();
+    }
+
+    typeWriter(): void {
+        const currentTitle = this.titles[this.currentTitleIndex];
+        
+        if (!this.isDeleting && this.currentCharIndex <= currentTitle.length) {
+            // Escribiendo
+            this.typewriterText = currentTitle.substring(0, this.currentCharIndex);
+            this.currentCharIndex++;
+            
+            if (this.currentCharIndex > currentTitle.length) {
+                // Pausa cuando termina de escribir
+                setTimeout(() => {
+                    this.isDeleting = true;
+                    this.typeWriter();
+                }, 2000);
+                return;
+            }
+            
+            setTimeout(() => this.typeWriter(), this.typewriterSpeed);
+        } else if (this.isDeleting && this.currentCharIndex >= 0) {
+            // Borrando
+            this.typewriterText = currentTitle.substring(0, this.currentCharIndex);
+            this.currentCharIndex--;
+            
+            if (this.currentCharIndex < 0) {
+                // Cambiar al siguiente título
+                this.isDeleting = false;
+                this.currentTitleIndex = (this.currentTitleIndex + 1) % this.titles.length;
+                this.currentCharIndex = 0;
+                setTimeout(() => this.typeWriter(), 500);
+                return;
+            }
+            
+            setTimeout(() => this.typeWriter(), this.typewriterSpeed / 2);
+        }
     }
 
     ngOnDestroy(): void {
@@ -59,6 +108,14 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     goToLink(url: string) {
         window.open(url, '_blank');
+    }
+
+    downloadCV(): void {
+        const link = document.createElement('a');
+        link.href = '/assets/files/resume.pdf';
+        link.download = 'Sebastian_Rodriguez_Resume.pdf';
+        link.target = '_blank';
+        link.click();
     }
 
     get buttonClass(): string {

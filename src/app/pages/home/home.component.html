@@ -1,57 +1,508 @@
 <app-nav-bar />
-<div class="container mt-5 px-5 border-profile">
-    <div class="row">
 
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 side-border">
-            <img src="/assets/images/cv.jpg" class="img-profile img-fluid">
-            <div class="container">
-                <div class="row mt-3 justify-content-center">
-                    <div class="col-md-auto col-12 text-center mb-2">
-                        <button type="button"  [class]="buttonClass" (click)="email()">
-                            <i class="bi bi-envelope-at-fill"></i> email
-                        </button>
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6 text-center mb-4 mb-md-0">
+                <img src="/assets/images/cv.jpg" class="hero-image" alt="Sebastian Rodriguez">
+
+                <br><br><br>
+
+                <div class="status-badges-container">
+                    <div class="status-badge">
+                        <span class="status-text">💼 open to work</span>
                     </div>
-                    <div class="col-md-auto col-12 text-center mb-2">
-                        <button type="button"  [class]="buttonClass" (click)="goToLink('https://www.linkedin.com/in/sebastian-rodriguez-zavala/')">
-                            <i class="bi bi-linkedin"></i> linkedIn
-                        </button>
+                    <div class="status-badge">
+                        <span class="status-text">🌎 remote friendly</span>
                     </div>
-                    <div class="col-md-auto col-12 text-center mb-2">
-                        <button type="button"  [class]="buttonClass" (click)="goToLink('https://github.com/srodzav')">
-                            <i class="bi bi-github"></i> github
-                        </button>
+                </div>
+            </div>
+            
+            <div class="col-lg-7 col-md-6">
+                
+                <h1 class="hero-title"><b>Sebastian Rodriguez</b></h1>
+                <h3 class="hero-subtitle">
+                    {{ typewriterText }}<span class="typewriter-cursor">|</span>
+                </h3>
+                
+                <p class="hero-description mt-4">
+                    I’m a Software Engineer who loves building web applications and learning along the way.
+                    I work on both frontend and backend, collaborate with others, and turning ideas into practical and solid solutions.
+                </p>
+                
+                <div class="cta-buttons mt-4">
+                    <button class="btn-primary-cta-black" (click)="email()">
+                        <i class="bi bi-envelope-at-fill"></i> Get in Touch
+                    </button>
+                    <button class="btn-secondary-cta" (click)="downloadCV()">
+                        <i class="bi bi-download"></i> Download CV
+                    </button>
+                </div>
+                
+                <div class="social-links mt-4">
+                    <button class="social-btn" (click)="goToLink('https://www.linkedin.com/in/sebastian-rodriguez-zavala/')">
+                        <i class="bi bi-linkedin"></i>
+                    </button>
+                    <button class="social-btn" (click)="goToLink('https://github.com/srodzav')">
+                        <i class="bi bi-github"></i>
+                    </button>
+                </div>
+                
+                <div class="timezone-info mt-3">
+                    <small><i class="bi bi-clock"></i> {{ currentTime }} Mexico City (GMT-6)</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tech Stack Section -->
+<div class="section-container">
+    <div class="container">
+        <h2 class="section-title"><b>Tech Stack</b></h2>
+        <p class="section-description">
+            As a Software Engineer, my goal is to find the right balance between frameworks that allow me to create 
+            applications in the most efficient and user friendly way possible.
+        </p>
+
+        <div class="tech-stack-container">
+        <div class="tech-section">
+            <h5><b>Languages</b></h5>
+            <div class="tech-badges">
+                <span class="tech-badge">
+                    <i class="devicon-javascript-plain colored"></i>JavaScript
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-typescript-plain colored"></i> TypeScript
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-csharp-plain colored"></i> C#
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-java-plain colored"></i> Java
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-php-plain colored"></i> PHP
+                </span>
+            </div>
+        </div>
+
+        <div class="tech-section">
+            <h5><b>Frameworks</b></h5>
+            <div class="tech-badges">
+                <span class="tech-badge">
+                    <i class="devicon-angularjs-plain colored"></i> Angular
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-react-original colored"></i> React
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-laravel-plain colored"></i> Laravel
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-dotnetcore-plain colored"></i> .NET
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-nodejs-plain colored"></i> Node.js
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-spring-plain colored"></i> Spring Boot
+                </span>
+            </div>
+        </div>
+
+        <div class="tech-section">
+            <h5><b>Tools</b></h5>
+            <div class="tech-badges">
+                <span class="tech-badge">
+                    <i class="devicon-git-plain colored"></i> Git
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-github-original colored"></i> GitHub
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-postman-plain colored"></i> Postman
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-docker-plain colored"></i> Docker
+                </span>
+            </div>
+        </div>
+
+        <div class="tech-section">
+            <h5><b>Databases</b></h5>
+            <div class="tech-badges">
+                <span class="tech-badge">
+                    <i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-mysql-plain colored"></i> MySQL
+                </span>
+                <span class="tech-badge">
+                    <i class="devicon-mongodb-plain colored"></i> MongoDB
+                </span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- Work Experience Section -->
+<div class="section-container experience-section">
+    <div class="container">
+        <h2 class="section-title"><b>Work Experience</b></h2>
+        <p class="section-description">
+            A summary of my professional experience and education in the field of software development.
+        </p>
+        <div class="experience-timeline">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h4 class="experience-title"><b>Software Developer</b></h4>
+                        <p class="experience-company">GTIM Software</p>
+                    </div>
+                    <span class="experience-duration">Jan 2025 - Present</span>
+                </div>
+                <div class="experience-description">
+                    <p>
+                        Full Stack Software Developer working on enterprise level applications.
+                        Responsible for developing scalable frontend solutions and integrating them
+                        with backend services.
+                    </p>
+                    <div class="experience-highlights">
+                        <span class="tech-badge">
+                            <i class="devicon-angularjs-plain colored"></i> Angular
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-dotnetcore-plain colored"></i> .NET
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-java-plain colored"></i> Java
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-spring-plain colored"></i> Spring Boot
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-azuredevops-plain colored"></i> Azure
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-docker-plain colored"></i> Docker
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h4 class="experience-title"><b>Junior Software Developer</b></h4>
+                        <p class="experience-company">Bentho Automation</p>
+                    </div>
+                    <span class="experience-duration">Nov 2022 - Feb 2025</span>
+                </div>
+                <div class="experience-description">
+                    <p>
+                        Junior Software Developer focused on building and maintaining web applications.
+                    </p>
+                    <div class="experience-highlights">
+                        <span class="tech-badge">
+                            <i class="devicon-angularjs-plain colored"></i> Angular
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-laravel-plain colored"></i> Laravel
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-java-plain colored"></i> Java
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-spring-plain colored"></i> Spring Boot
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-bitbucket-plain colored"></i> Bitbucket
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h4 class="experience-title"><b>Hardware Lab Intern</b></h4>
+                        <p class="experience-company">Universidad Autónoma de San Luis Potosí</p>
+                    </div>
+                    <span class="experience-duration">Jan 2022 - Jan 2023</span>
+                </div>
+                <div class="experience-description">
+                    <p>
+                        Worked with embedded systems and assisted students with practical electronics and programming tasks.
+                    </p>
+                    <div class="experience-highlights">
+                        <span class="tech-badge">
+                            <i class="devicon-csharp-plain colored"></i> C#
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-cplusplus-plain colored"></i> C++
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-arduino-plain colored"></i> Arduino
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-linux-plain colored"></i> Linux
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h4 class="experience-title"><b>Computer Science Degree</b></h4>
+                        <p class="experience-company">Universidad Autónoma de San Luis Potosí</p>
+                    </div>
+                    <span class="experience-duration">Aug 2018 - Dec 2023</span>
+                </div>
+                <div class="experience-description">
+                    <p>Bachelor’s Degree in Computer Science Engineering. Built a strong foundation in software engineering, algorithms, data structures, and system design.</p>
+                    <div class="experience-highlights">
+                        <span class="tech-badge">
+                            <i class="devicon-javascript-plain colored"></i> JavaScript
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-typescript-plain colored"></i> TypeScript
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-csharp-plain colored"></i> C#
+                        </span>
+                        <span class="tech-badge">
+                            <i class="devicon-java-plain colored"></i> Java
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div id="info" class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <h2 class=""><b>Sebastian Rodriguez</b></h2>
-            <br>
-            <p>I am a <b>Software Engineer</b> who enjoys working on web development and solving challenges with creative solutions.</p>
-            <p>Currently working as a Full Stack Developer, while staying open to exploring opportunities for growth and innovation.</p>
-            <br>
-            <h2 class=""><b>Skills</b></h2>
-            <br>
-            <p>As a Software Engineer, my goal is to find the right balance between frameworks that allow me to create applications in the most efficient, scalable, and user-friendly way possible.</p>
-            <p>I have experience with <b>JavaScript</b>, <b>TypeScript</b>, and <b>PHP</b>. These languages have been fundamental in my projects.</p>
-            <p>Regarding frameworks, I've worked with <b>Angular</b> and <b>React</b> to build responsive and interactive user interfaces, <b>Node.js</b> for robust server-side applications and APIs, <b>Laravel</b> and <b>.NET</b> for efficient backend systems.</p>
-        </div>
-
     </div>
-
-    <div class="text-center pt-4">
-        <small>{{ currentTime }} Mexico City (GMT-6) Timezone</small>
-    </div>
-
-    <div class="card mt-5">
-        <div class="card-body">
-            <blockquote class="blockquote mb-0">
-                <p>It works on my machine.</p>
-                <footer class="blockquote-footer"><cite title="Every developer ever">Every developer ever</cite></footer>
-            </blockquote>
-        </div>
-    </div>
-
 </div>
-<app-footer />
+
+<!-- Projects Section -->
+<div class="section-container projects-section">
+    <div class="container">
+        <h2 class="section-title"><b>Projects</b></h2>
+        <p class="section-description">
+            A selection of projects I've built, showcasing my skills in fullstack development.
+        </p>
+        
+        <div class="row g-4">
+            <!-- Medical Appointments System -->
+            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="/assets/images/medical.png" class="project-image" alt="Medical Appointments System" />
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">🏥 <b>Medical Appointments System</b></h4>
+                        <p class="project-description">
+                            A <b>fullstack</b> web application for managing medical appointments and patient records.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag"><i class="devicon-angularjs-plain colored"></i> Angular</span>
+                            <span class="project-tag"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+                            <span class="project-tag"><i class="devicon-laravel-plain colored"></i> Laravel</span>
+                            <span class="project-tag"><i class="devicon-php-plain colored"></i> PHP</span>
+                            <span class="project-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-project-primary" (click)="goToLink('https://demo.sebastianrdz.com')">
+                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                            </button>
+                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/medical-appointments-system')">
+                                <i class="bi bi-github"></i> Source
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DENUE Search -->
+            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="/assets/images/inegi.png" class="project-image" alt="DENUE Search Project" />
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">📍 <b>DENUE Search</b></h4>
+                        <p class="project-description">
+                            An app that lets users search Mexico's <b>DENUE database</b> to explore nearby economic units, visualize them on a map.
+                        <div class="project-tags">
+                            <span class="project-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                            <span class="project-tag"><i class="devicon-dotnetcore-plain colored"></i> .NET</span>
+                            <span class="project-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-project-primary" (click)="goToLink('https://denue.sebastianrdz.com')">
+                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                            </button>
+                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/inegi')">
+                                <i class="bi bi-github"></i> Source
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skull 3D -->
+            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="/assets/images/skull3d.png" class="project-image" alt="Skull3D Project" />
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">💀 <b>3D Model Showcase</b></h4>
+                        <p class="project-description">
+                            A minimal 3D model showcase created using <b>ThreeJS</b> library.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag"><i class="devicon-react-original colored"></i> React</span>
+                            <span class="project-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                            <span class="project-tag"><i class="devicon-html5-plain colored"></i> HTML</span>
+                            <span class="project-tag"><i class="devicon-css3-plain colored"></i> CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-project-primary" (click)="goToLink('https://kannssai.sebastianrdz.com')">
+                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                            </button>
+                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/skull3d')">
+                                <i class="bi bi-github"></i> Source
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie Reviews -->
+            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="/assets/images/reviews.png" class="project-image" alt="Movie Reviews Project" />
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">🎬 <b>Movie Reviews</b></h4>
+                        <p class="project-description">
+                            A web app that provides my personal movie reviews.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag"><i class="devicon-react-original colored"></i> React</span>
+                            <span class="project-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                            <span class="project-tag"><i class="devicon-laravel-plain colored"></i> Laravel</span>
+                            <span class="project-tag"><i class="devicon-php-plain colored"></i> PHP</span>
+                            <span class="project-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-project-primary" (click)="goToLink('https://reviews.sebastianrdz.com')">
+                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                            </button>
+                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/reviews')">
+                                <i class="bi bi-github"></i> Source
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Currency Converter -->
+            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="/assets/images/currency.png" class="project-image" alt="Currency Converter Project" />
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">💵 <b>Currency Converter</b></h4>
+                        <p class="project-description">
+                            A calculator that helps users convert between different currencies.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag"><i class="devicon-react-original colored"></i> React</span>
+                            <span class="project-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                            <span class="project-tag"><i class="devicon-html5-plain colored"></i> HTML</span>
+                            <span class="project-tag"><i class="devicon-css3-plain colored"></i> CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-project-primary" (click)="goToLink('https://currency.sebastianrdz.com')">
+                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                            </button>
+                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/currency-converter')">
+                                <i class="bi bi-github"></i> Source
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tomasa3D -->
+            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="/assets/images/tomasa.jpg" class="project-image" alt="Tomasa3D Project" />
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-title">🐈‍⬛ <b>Tomasa3D</b></h4>
+                        <p class="project-description">
+                            A 3D model of my cat created using <b>ThreeJS</b> library.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag"><i class="devicon-angularjs-plain colored"></i> Angular</span>
+                            <span class="project-tag"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+                            <span class="project-tag"><i class="devicon-html5-plain colored"></i> HTML</span>
+                            <span class="project-tag"><i class="devicon-css3-plain colored"></i> CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-project-primary" (click)="goToLink('https://tomasa3d.sebastianrdz.com')">
+                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                            </button>
+                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/tomasa3D')">
+                                <i class="bi bi-github"></i> Source
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="cta-section">
+    <div class="container text-center">
+        <h2 class="cta-title"><b>Let's Work Together</b></h2>
+        <p class="cta-description">Feel free to reach out for opportunities or just to connect.</p>
+        
+        <div class="cta-buttons-large mt-4">
+            <button class="btn-primary-cta-large-black" (click)="email()">
+                <i class="bi bi-envelope-at-fill"></i> Contact Me
+            </button>
+            <button class="btn-secondary-cta-large" (click)="downloadCV()">
+                <i class="bi bi-file-earmark-pdf"></i> View Resume
+            </button>
+        </div>
+        
+        <div class="contact-info mt-4">
+            <p><b>personal:</b> srdzavala&#64;gmail.com</p>
+            <p><b>work:</b> contact&#64;sebastianrdz.com</p>
+        </div>
+    </div>
+
+    <div class="quote-section">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>"It works on my machine."</p>
+                        <footer class="blockquote-footer"><cite title="Every developer ever">Every developer ever</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-footer />
+</div>

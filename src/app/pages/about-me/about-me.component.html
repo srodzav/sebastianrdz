@@ -3,8 +3,8 @@
 <!-- About Me Hero Section -->
 <div class="about-hero-section">
     <div class="container">
-        <h1 class="about-title"><b>About Me</b></h1>
-        <p class="about-subtitle">A little more about who I am beyond the code</p>
+        <h1 class="about-title"><b>{{ 'about.title' | transloco }}</b></h1>
+        <p class="about-subtitle">{{ 'about.subtitle' | transloco }}</p>
     </div>
 </div>
 
@@ -16,9 +16,9 @@
             <div class="col-12">
                 <div class="about-card">
                     <div class="card-icon">👨🏻‍💻</div>
-                    <h3><b>Introduction</b></h3>
-                    <p>My name is Sebastian. I'm 25 years old. I believe in taking care of myself and a balanced diet and rigorous exercise routine. I graduated from the Universidad Autónoma de San Luis Potosí, with a degree in <b>Computer Science</b>. I currently have three years of experience in web development.</p>
-                    <p>My work has led me to focus on <b>full stack development</b>. I have a particular passion for <b>front end</b> (I also enjoy <b>back end</b>!). I'm motivated by creating solutions that make an impact, while staying open to opportunities for growth and innovation.</p>
+                    <h3><b>{{ 'about.sections.introduction.title' | transloco }}</b></h3>
+                    <p>{{ 'about.sections.introduction.content1' | transloco }}</p>
+                    <p>{{ 'about.sections.introduction.content2' | transloco }}</p>
                 </div>
             </div>
 
@@ -26,14 +26,14 @@
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="about-card">
                     <div class="card-icon">👾</div>
-                    <h3><b>Hobbies & Lifestyle</b></h3>
-                    <p>Outside of work, I have several hobbies, with <b>gym</b> and <b>gaming</b> being the ones I enjoy the most. I consider myself to live an active life.</p>
+                    <h3><b>{{ 'about.sections.hobbies.title' | transloco }}</b></h3>
+                    <p>{{ 'about.sections.hobbies.content' | transloco }}</p>
                     <div class="hobby-tags">
-                        <span class="hobby-tag">🏋️‍♂️ Gym</span>
-                        <span class="hobby-tag">🎮 Gaming</span>
-                        <span class="hobby-tag">🏕️ Camping</span>
-                        <span class="hobby-tag">🎥 Movies</span>
-                        <span class="hobby-tag">✈️ Travel</span>
+                        <span class="hobby-tag">🏋️‍♂️ {{ 'about.sections.hobbies.tags.gym' | transloco }}</span>
+                        <span class="hobby-tag">🎮 {{ 'about.sections.hobbies.tags.gaming' | transloco }}</span>
+                        <span class="hobby-tag">🏏️ {{ 'about.sections.hobbies.tags.camping' | transloco }}</span>
+                        <span class="hobby-tag">🎥 {{ 'about.sections.hobbies.tags.movies' | transloco }}</span>
+                        <span class="hobby-tag">✈️ {{ 'about.sections.hobbies.tags.travel' | transloco }}</span>
 
                     </div>
                 </div>
@@ -43,21 +43,21 @@
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="about-card">
                     <div class="card-icon">🐱</div>
-                    <h3><b>My Cats</b></h3>
-                    <p>I have two cats that are part of my life:</p>
+                    <h3><b>{{ 'about.sections.cats.title' | transloco }}</b></h3>
+                    <p>{{ 'about.sections.cats.content' | transloco }}</p>
                     <div class="pet-info">
                         <div class="pet-item">
                             <span class="pet-emoji">🐈</span>
                             <div>
-                                <strong>Kira</strong>
-                                <small>6 years old</small>
+                                <strong>{{ 'about.sections.cats.kira.name' | transloco }}</strong>
+                                <small>{{ 'about.sections.cats.kira.age' | transloco }}</small>
                             </div>
                         </div>
                         <div class="pet-item">
                             <span class="pet-emoji">🐈‍⬛</span>
                             <div>
-                                <strong>Tomasa</strong>
-                                <small>5 years old (dedicated a project to her!)</small>
+                                <strong>{{ 'about.sections.cats.tomasa.name' | transloco }}</strong>
+                                <small>{{ 'about.sections.cats.tomasa.age' | transloco }}</small>
                             </div>
                         </div>
                     </div>
@@ -68,8 +68,8 @@
             <div class="col-12">
                 <div class="about-card">
                     <div class="card-icon">🤖</div>
-                    <h3><b>What I Think About AI</b></h3>
-                    <p>I believe AI is a powerful tool that it will never replace human creativity and problem solving. We can use it to automate repetitive tasks. As long as we use it responsibly, it can be a great tool.</p>
+                    <h3><b>{{ 'about.sections.ai.title' | transloco }}</b></h3>
+                    <p>{{ 'about.sections.ai.content' | transloco }}</p>
                 </div>
             </div>
 
@@ -77,20 +77,20 @@
             <div class="col-12">
                 <div class="about-card contact-card">
                     <div class="card-icon">📬</div>
-                    <h3><b>Get In Touch</b></h3>
-                    <p>If you have any comments or questions, feel free to reach out:</p>
+                    <h3><b>{{ 'about.sections.contact.title' | transloco }}</b></h3>
+                    <p>{{ 'about.sections.contact.content' | transloco }}</p>
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="bi bi-person-circle"></i>
                             <div>
-                                <strong>Personal inquiries</strong>
+                                <strong>{{ 'about.sections.contact.personal' | transloco }}</strong>
                                 <a href="mailto:srdzavala@gmail.com">srdzavala&#64;gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="bi bi-briefcase"></i>
                             <div>
-                                <strong>Job inquiries</strong>
+                                <strong>{{ 'about.sections.contact.work' | transloco }}</strong>
                                 <a href="mailto:contact@sebastianrdz.com">contact&#64;sebastianrdz.com</a>
                             </div>
                         </div>
@@ -103,8 +103,8 @@
                 <div class="signature-section">
                     <p class="signature">- sebastian</p>
                     <div class="timestamps">
-                        <small><i class="bi bi-pencil"></i> written 29/11/2024</small>
-                        <small><i class="bi bi-arrow-clockwise"></i> updated 09/01/2026</small>
+                        <small><i class="bi bi-pencil"></i> {{ 'about.sections.signature.written' | transloco }} 29/11/2024</small>
+                        <small><i class="bi bi-arrow-clockwise"></i> {{ 'about.sections.signature.updated' | transloco }} 09/01/2026</small>
                     </div>
                 </div>
             </div>

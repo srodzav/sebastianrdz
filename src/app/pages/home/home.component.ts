@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ThemeService } from '../../services/theme.service';
 import { Subscription } from 'rxjs';
+import { TranslocoService } from '@jsverse/transloco';
 
 declare const $: any;
 
@@ -16,17 +17,19 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     currentTime: string = '';
     isDarkTheme: boolean = false;
+    isSpanish: string = '';
     private themeSubscription: Subscription = new Subscription();
+    private langSubscription: Subscription = new Subscription();
     
     // Typewriter animation
     typewriterText: string = '';
-    private titles: string[] = ['Software Developer', 'Full Stack Developer', 'Software Engineer'];
+    private titles: string[] = [];
     private currentTitleIndex: number = 0;
     private currentCharIndex: number = 0;
     private isDeleting: boolean = false;
     private typewriterSpeed: number = 100;
 
-    constructor(private themeService: ThemeService) {}
+    constructor(private themeService: ThemeService, private translocoService: TranslocoService) {}
 
     ngOnInit(): void {
         this.updateTime();
@@ -34,7 +37,17 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.themeSubscription = this.themeService.isDarkMode$.subscribe(isDark => {
             this.isDarkTheme = isDark;
         });
-        this.startTypewriter();
+        
+        // Subscribe to language changes and restart typewriter
+        this.langSubscription = this.translocoService.langChanges$.subscribe(() => {
+            this.isSpanish = this.translocoService.getActiveLang();
+            this.updateTitles();
+            this.startTypewriter();
+            this.currentTitleIndex = 0;
+            this.currentCharIndex = 0;
+            this.isDeleting = false;
+            this.typewriterText = '';
+        });
     }
 
     startTypewriter(): void {
@@ -79,6 +92,23 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     ngOnDestroy(): void {
         this.themeSubscription.unsubscribe();
+        this.langSubscription.unsubscribe();
+    }
+
+    updateTitles(): void {
+        if(this.isSpanish === 'es') {
+            this.titles = [
+                'Ingeniero de Software',
+                'Desarrollador Full Stack',
+                'Desarrollador de Software'
+            ];
+        } else {
+            this.titles = [
+                'Software Engineer',
+                'Full Stack Developer',
+                'Software Developer'
+            ];
+        }
     }
 
     updateTime(): void {

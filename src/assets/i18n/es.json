@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "resume": "Currículum",
+    "aboutMe": "Sobre mí"
+  },
+  "hero": {
+    "openToWork": "💼 disponible",
+    "remoteFriendly": "🌎 trabajo remoto",
+    "roles": {
+      "softwareEngineer": "Ingeniero de Software",
+      "fullStackDeveloper": "Desarrollador Full Stack",
+      "problemSolver": "Desarrollador de Software"
+    },
+    "description": "Soy un Ingeniero de Software que ama construir aplicaciones web y aprender en el camino. Trabajo tanto en frontend como en backend, colaboro con otros, y convierto ideas en soluciones prácticas y sólidas.",
+    "getInTouch": "Contáctame",
+    "downloadCV": "Descargar CV",
+    "timezone": "Ciudad de México (GMT-6)"
+  },
+  "techStack": {
+    "title": "Stack Tecnológico",
+    "description": "Como Ingeniero de Software, mi objetivo es encontrar el equilibrio adecuado entre frameworks que me permitan crear aplicaciones de la manera más eficiente y amigable para el usuario.",
+    "languages": "Lenguajes",
+    "frameworks": "Frameworks",
+    "tools": "Herramientas",
+    "databases": "Bases de Datos"
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "description": "Un resumen de mi experiencia profesional y educación en el campo del desarrollo de software.",
+    "jobs": {
+      "gtim": {
+        "title": "Desarrollador de Software",
+        "company": "GTIM Software",
+        "duration": "Ene 2025 - Presente",
+        "description": "Desarrollador de Software Full Stack trabajando en aplicaciones de nivel empresarial. Responsable de desarrollar soluciones escalables de frontend e integrarlas con servicios de backend."
+      },
+      "bentho": {
+        "title": "Desarrollador de Software Junior",
+        "company": "Bentho Automation",
+        "duration": "Nov 2022 - Feb 2025",
+        "description": "Desarrollador de Software Junior enfocado en construir y mantener aplicaciones web."
+      },
+      "uaslp": {
+        "title": "Becario de Laboratorio de Hardware",
+        "company": "Universidad Autónoma de San Luis Potosí",
+        "duration": "Ene 2022 - Ene 2023",
+        "description": "Trabajé con sistemas embebidos y asistí a estudiantes con tareas prácticas de electrónica y programación."
+      },
+      "degree": {
+        "title": "Licenciatura en Ciencias de la Computación",
+        "company": "Universidad Autónoma de San Luis Potosí",
+        "duration": "Ago 2018 - Dic 2023",
+        "description": "Licenciatura en Ingeniería en Ciencias de la Computación. Construí una base sólida en ingeniería de software, algoritmos, estructuras de datos y diseño de sistemas."
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Una selección de proyectos que he construido, mostrando mis habilidades en desarrollo fullstack.",
+    "liveDemo": "Demo en Vivo",
+    "source": "Código",
+    "items": {
+      "medical": {
+        "title": "Sistema de Citas Médicas",
+        "description": "Una aplicación web fullstack para administrar citas médicas y registros de pacientes."
+      },
+      "denue": {
+        "title": "Búsqueda DENUE",
+        "description": "Una aplicación que permite a los usuarios buscar en la base de datos DENUE de México para explorar unidades económicas cercanas y visualizarlas en un mapa."
+      },
+      "skull": {
+        "title": "Showcase de Modelo 3D",
+        "description": "Una exhibición minimalista de modelo 3D creada usando la librería ThreeJS."
+      },
+      "reviews": {
+        "title": "Reseñas de Películas",
+        "description": "Una aplicación web que proporciona mis reseñas personales de películas."
+      },
+      "currency": {
+        "title": "Conversor de Divisas",
+        "description": "Una calculadora que ayuda a los usuarios a convertir entre diferentes monedas."
+      },
+      "tomasa": {
+        "title": "Tomasa3D",
+        "description": "Un modelo 3D de mi gata creado usando la librería ThreeJS."
+      }
+    }
+  },
+  "cta": {
+    "title": "Trabajemos Juntos",
+    "description": "No dudes en contactarme para oportunidades o simplemente para conectar.",
+    "contactMe": "Contáctame",
+    "viewResume": "Ver Currículum",
+    "personal": "personal",
+    "work": "trabajo",
+    "quote": {
+      "text": "Funciona en mi máquina.",
+      "author": "Todo desarrollador alguna vez"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "Un poco más sobre quién soy más allá del código",
+    "sections": {
+      "introduction": {
+        "title": "Introducción",
+        "content1": "Mi nombre es Sebastian. Tengo 25 años. Creo en cuidarme a mí mismo con una dieta balanceada y una rutina de ejercicio rigurosa. Me gradué de la Universidad Autónoma de San Luis Potosí, con un título en Ciencias de la Computación. Actualmente tengo tres años de experiencia en desarrollo web.",
+        "content2": "Mi trabajo me ha llevado a enfocarme en desarrollo full stack. Tengo una pasión particular por el front end (¡también disfruto el back end!). Me motiva crear soluciones que generen impacto, mientras me mantengo abierto a oportunidades de crecimiento e innovación."
+      },
+      "hobbies": {
+        "title": "Pasatiempos y Estilo de Vida",
+        "content": "Fuera del trabajo, tengo varios pasatiempos, siendo el gimnasio y los videojuegos los que más disfruto. Me considero alguien que vive una vida activa.",
+        "tags": {
+          "gym": "Gimnasio",
+          "gaming": "Videojuegos",
+          "camping": "Acampar",
+          "movies": "Películas",
+          "travel": "Viajar"
+        }
+      },
+      "cats": {
+        "title": "Mis Gatas",
+        "content": "Tengo dos gatas que son parte de mi vida:",
+        "kira": {
+          "name": "Kira",
+          "age": "6 años"
+        },
+        "tomasa": {
+          "name": "Tomasa",
+          "age": "5 años (¡le dediqué un proyecto!)"
+        }
+      },
+      "ai": {
+        "title": "Lo Que Pienso Sobre la IA",
+        "content": "Creo que la IA es una herramienta poderosa que nunca reemplazará la creatividad humana y la resolución de problemas. Podemos usarla para automatizar tareas repetitivas. Mientras la usemos responsablemente, puede ser una gran herramienta."
+      },
+      "contact": {
+        "title": "Ponte en Contacto",
+        "content": "Si tienes algún comentario o pregunta, no dudes en contactarme:",
+        "personal": "Consultas personales",
+        "work": "Consultas laborales"
+      },
+      "signature": {
+        "written": "escrito",
+        "updated": "actualizado"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Sebastian Rodriguez"
+  }
+}

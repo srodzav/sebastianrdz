@@ -11,10 +11,10 @@
 
                 <div class="status-badges-container">
                     <div class="status-badge">
-                        <span class="status-text">💼 open to work</span>
+                        <span class="status-text">{{ 'hero.openToWork' | transloco }}</span>
                     </div>
                     <div class="status-badge">
-                        <span class="status-text">🌎 remote friendly</span>
+                        <span class="status-text">{{ 'hero.remoteFriendly' | transloco }}</span>
                     </div>
                 </div>
             </div>
@@ -27,16 +27,15 @@
                 </h3>
                 
                 <p class="hero-description mt-4">
-                    I’m a Software Engineer who loves building web applications and learning along the way.
-                    I work on both frontend and backend, collaborate with others, and turning ideas into practical and solid solutions.
+                    {{ 'hero.description' | transloco }}
                 </p>
                 
                 <div class="cta-buttons mt-4">
                     <button class="btn-primary-cta-black" (click)="email()">
-                        <i class="bi bi-envelope-at-fill"></i> Get in Touch
+                        <i class="bi bi-envelope-at-fill"></i> {{ 'hero.getInTouch' | transloco }}
                     </button>
                     <button class="btn-secondary-cta" (click)="downloadCV()">
-                        <i class="bi bi-download"></i> Download CV
+                        <i class="bi bi-download"></i> {{ 'hero.downloadCV' | transloco }}
                     </button>
                 </div>
                 
@@ -50,7 +49,7 @@
                 </div>
                 
                 <div class="timezone-info mt-3">
-                    <small><i class="bi bi-clock"></i> {{ currentTime }} Mexico City (GMT-6)</small>
+                    <small><i class="bi bi-clock"></i> {{ currentTime }} {{ 'hero.timezone' | transloco }}</small>
                 </div>
             </div>
         </div>
@@ -60,15 +59,14 @@
 <!-- Tech Stack Section -->
 <div class="section-container">
     <div class="container">
-        <h2 class="section-title"><b>Tech Stack</b></h2>
+        <h2 class="section-title"><b>{{ 'techStack.title' | transloco }}</b></h2>
         <p class="section-description">
-            As a Software Engineer, my goal is to find the right balance between frameworks that allow me to create 
-            applications in the most efficient and user friendly way possible.
+            {{ 'techStack.description' | transloco }}
         </p>
 
         <div class="tech-stack-container">
         <div class="tech-section">
-            <h5><b>Languages</b></h5>
+            <h5><b>{{ 'techStack.languages' | transloco }}</b></h5>
             <div class="tech-badges">
                 <span class="tech-badge">
                     <i class="devicon-javascript-plain colored"></i>JavaScript
@@ -89,7 +87,7 @@
         </div>
 
         <div class="tech-section">
-            <h5><b>Frameworks</b></h5>
+            <h5><b>{{ 'techStack.frameworks' | transloco }}</b></h5>
             <div class="tech-badges">
                 <span class="tech-badge">
                     <i class="devicon-angularjs-plain colored"></i> Angular
@@ -113,7 +111,7 @@
         </div>
 
         <div class="tech-section">
-            <h5><b>Tools</b></h5>
+            <h5><b>{{ 'techStack.tools' | transloco }}</b></h5>
             <div class="tech-badges">
                 <span class="tech-badge">
                     <i class="devicon-git-plain colored"></i> Git
@@ -131,7 +129,7 @@
         </div>
 
         <div class="tech-section">
-            <h5><b>Databases</b></h5>
+            <h5><b>{{ 'techStack.databases' | transloco }}</b></h5>
             <div class="tech-badges">
                 <span class="tech-badge">
                     <i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server
@@ -151,24 +149,22 @@
 <!-- Work Experience Section -->
 <div class="section-container experience-section">
     <div class="container">
-        <h2 class="section-title"><b>Work Experience</b></h2>
+        <h2 class="section-title"><b>{{ 'experience.title' | transloco }}</b></h2>
         <p class="section-description">
-            A summary of my professional experience and education in the field of software development.
+            {{ 'experience.description' | transloco }}
         </p>
         <div class="experience-timeline">
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h4 class="experience-title"><b>Software Developer</b></h4>
-                        <p class="experience-company">GTIM Software</p>
+                        <h4 class="experience-title"><b>{{ 'experience.jobs.gtim.title' | transloco }}</b></h4>
+                        <p class="experience-company">{{ 'experience.jobs.gtim.company' | transloco }}</p>
                     </div>
-                    <span class="experience-duration">Jan 2025 - Present</span>
+                    <span class="experience-duration">{{ 'experience.jobs.gtim.duration' | transloco }}</span>
                 </div>
                 <div class="experience-description">
                     <p>
-                        Full Stack Software Developer working on enterprise level applications.
-                        Responsible for developing scalable frontend solutions and integrating them
-                        with backend services.
+                        {{ 'experience.jobs.gtim.description' | transloco }}
                     </p>
                     <div class="experience-highlights">
                         <span class="tech-badge">
@@ -196,14 +192,14 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h4 class="experience-title"><b>Junior Software Developer</b></h4>
-                        <p class="experience-company">Bentho Automation</p>
+                        <h4 class="experience-title"><b>{{ 'experience.jobs.bentho.title' | transloco }}</b></h4>
+                        <p class="experience-company">{{ 'experience.jobs.bentho.company' | transloco }}</p>
                     </div>
-                    <span class="experience-duration">Nov 2022 - Feb 2025</span>
+                    <span class="experience-duration">{{ 'experience.jobs.bentho.duration' | transloco }}</span>
                 </div>
                 <div class="experience-description">
                     <p>
-                        Junior Software Developer focused on building and maintaining web applications.
+                        {{ 'experience.jobs.bentho.description' | transloco }}
                     </p>
                     <div class="experience-highlights">
                         <span class="tech-badge">
@@ -228,14 +224,14 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h4 class="experience-title"><b>Hardware Lab Intern</b></h4>
-                        <p class="experience-company">Universidad Autónoma de San Luis Potosí</p>
+                        <h4 class="experience-title"><b>{{ 'experience.jobs.uaslp.title' | transloco }}</b></h4>
+                        <p class="experience-company">{{ 'experience.jobs.uaslp.company' | transloco }}</p>
                     </div>
-                    <span class="experience-duration">Jan 2022 - Jan 2023</span>
+                    <span class="experience-duration">{{ 'experience.jobs.uaslp.duration' | transloco }}</span>
                 </div>
                 <div class="experience-description">
                     <p>
-                        Worked with embedded systems and assisted students with practical electronics and programming tasks.
+                        {{ 'experience.jobs.uaslp.description' | transloco }}
                     </p>
                     <div class="experience-highlights">
                         <span class="tech-badge">
@@ -257,13 +253,13 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h4 class="experience-title"><b>Computer Science Degree</b></h4>
-                        <p class="experience-company">Universidad Autónoma de San Luis Potosí</p>
+                        <h4 class="experience-title"><b>{{ 'experience.jobs.degree.title' | transloco }}</b></h4>
+                        <p class="experience-company">{{ 'experience.jobs.degree.company' | transloco }}</p>
                     </div>
-                    <span class="experience-duration">Aug 2018 - Dec 2023</span>
+                    <span class="experience-duration">{{ 'experience.jobs.degree.duration' | transloco }}</span>
                 </div>
                 <div class="experience-description">
-                    <p>Bachelor’s Degree in Computer Science Engineering. Built a strong foundation in software engineering, algorithms, data structures, and system design.</p>
+                    <p>{{ 'experience.jobs.degree.description' | transloco }}</p>
                     <div class="experience-highlights">
                         <span class="tech-badge">
                             <i class="devicon-javascript-plain colored"></i> JavaScript
@@ -287,9 +283,9 @@
 <!-- Projects Section -->
 <div class="section-container projects-section">
     <div class="container">
-        <h2 class="section-title"><b>Projects</b></h2>
+        <h2 class="section-title"><b>{{ 'projects.title' | transloco }}</b></h2>
         <p class="section-description">
-            A selection of projects I've built, showcasing my skills in fullstack development.
+            {{ 'projects.description' | transloco }}
         </p>
         
         <div class="row g-4">
@@ -300,9 +296,9 @@
                         <img src="/assets/images/medical.png" class="project-image" alt="Medical Appointments System" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">🏥 <b>Medical Appointments System</b></h4>
+                        <h4 class="project-title">🏭 <b>{{ 'projects.items.medical.title' | transloco }}</b></h4>
                         <p class="project-description">
-                            A <b>fullstack</b> web application for managing medical appointments and patient records.
+                            {{ 'projects.items.medical.description' | transloco }}
                         </p>
                         <div class="project-tags">
                             <span class="project-tag"><i class="devicon-angularjs-plain colored"></i> Angular</span>
@@ -313,10 +309,10 @@
                         </div>
                         <div class="project-buttons">
                             <button class="btn-project-primary" (click)="goToLink('https://demo.sebastianrdz.com')">
-                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                                <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
                             <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/medical-appointments-system')">
-                                <i class="bi bi-github"></i> Source
+                                <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
                     </div>
@@ -330,9 +326,9 @@
                         <img src="/assets/images/inegi.png" class="project-image" alt="DENUE Search Project" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">📍 <b>DENUE Search</b></h4>
+                        <h4 class="project-title">📍 <b>{{ 'projects.items.denue.title' | transloco }}</b></h4>
                         <p class="project-description">
-                            An app that lets users search Mexico's <b>DENUE database</b> to explore nearby economic units, visualize them on a map.
+                            {{ 'projects.items.denue.description' | transloco }}
                         <div class="project-tags">
                             <span class="project-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
                             <span class="project-tag"><i class="devicon-dotnetcore-plain colored"></i> .NET</span>
@@ -340,10 +336,10 @@
                         </div>
                         <div class="project-buttons">
                             <button class="btn-project-primary" (click)="goToLink('https://denue.sebastianrdz.com')">
-                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                                <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
                             <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/inegi')">
-                                <i class="bi bi-github"></i> Source
+                                <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
                     </div>
@@ -357,9 +353,9 @@
                         <img src="/assets/images/skull3d.png" class="project-image" alt="Skull3D Project" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">💀 <b>3D Model Showcase</b></h4>
+                        <h4 class="project-title">💀 <b>{{ 'projects.items.skull.title' | transloco }}</b></h4>
                         <p class="project-description">
-                            A minimal 3D model showcase created using <b>ThreeJS</b> library.
+                            {{ 'projects.items.skull.description' | transloco }}
                         </p>
                         <div class="project-tags">
                             <span class="project-tag"><i class="devicon-react-original colored"></i> React</span>
@@ -369,10 +365,10 @@
                         </div>
                         <div class="project-buttons">
                             <button class="btn-project-primary" (click)="goToLink('https://kannssai.sebastianrdz.com')">
-                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                                <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
                             <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/skull3d')">
-                                <i class="bi bi-github"></i> Source
+                                <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
                     </div>
@@ -386,9 +382,9 @@
                         <img src="/assets/images/reviews.png" class="project-image" alt="Movie Reviews Project" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">🎬 <b>Movie Reviews</b></h4>
+                        <h4 class="project-title">🎬 <b>{{ 'projects.items.reviews.title' | transloco }}</b></h4>
                         <p class="project-description">
-                            A web app that provides my personal movie reviews.
+                            {{ 'projects.items.reviews.description' | transloco }}
                         </p>
                         <div class="project-tags">
                             <span class="project-tag"><i class="devicon-react-original colored"></i> React</span>
@@ -399,10 +395,10 @@
                         </div>
                         <div class="project-buttons">
                             <button class="btn-project-primary" (click)="goToLink('https://reviews.sebastianrdz.com')">
-                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                                <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
                             <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/reviews')">
-                                <i class="bi bi-github"></i> Source
+                                <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
                     </div>
@@ -416,9 +412,9 @@
                         <img src="/assets/images/currency.png" class="project-image" alt="Currency Converter Project" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">💵 <b>Currency Converter</b></h4>
+                        <h4 class="project-title">💵 <b>{{ 'projects.items.currency.title' | transloco }}</b></h4>
                         <p class="project-description">
-                            A calculator that helps users convert between different currencies.
+                            {{ 'projects.items.currency.description' | transloco }}
                         </p>
                         <div class="project-tags">
                             <span class="project-tag"><i class="devicon-react-original colored"></i> React</span>
@@ -428,10 +424,10 @@
                         </div>
                         <div class="project-buttons">
                             <button class="btn-project-primary" (click)="goToLink('https://currency.sebastianrdz.com')">
-                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                                <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
                             <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/currency-converter')">
-                                <i class="bi bi-github"></i> Source
+                                <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
                     </div>
@@ -445,9 +441,9 @@
                         <img src="/assets/images/tomasa.jpg" class="project-image" alt="Tomasa3D Project" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">🐈‍⬛ <b>Tomasa3D</b></h4>
+                        <h4 class="project-title">🐈‍⬛ <b>{{ 'projects.items.tomasa.title' | transloco }}</b></h4>
                         <p class="project-description">
-                            A 3D model of my cat created using <b>ThreeJS</b> library.
+                            {{ 'projects.items.tomasa.description' | transloco }}
                         </p>
                         <div class="project-tags">
                             <span class="project-tag"><i class="devicon-angularjs-plain colored"></i> Angular</span>
@@ -457,10 +453,10 @@
                         </div>
                         <div class="project-buttons">
                             <button class="btn-project-primary" (click)="goToLink('https://tomasa3d.sebastianrdz.com')">
-                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                                <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
                             <button class="btn-project-secondary" (click)="goToLink('https://github.com/srodzav/tomasa3D')">
-                                <i class="bi bi-github"></i> Source
+                                <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
                     </div>
@@ -474,21 +470,21 @@
 <!-- CTA Section -->
 <div class="cta-section">
     <div class="container text-center">
-        <h2 class="cta-title"><b>Let's Work Together</b></h2>
-        <p class="cta-description">Feel free to reach out for opportunities or just to connect.</p>
+        <h2 class="cta-title"><b>{{ 'cta.title' | transloco }}</b></h2>
+        <p class="cta-description">{{ 'cta.description' | transloco }}</p>
         
         <div class="cta-buttons-large mt-4">
             <button class="btn-primary-cta-large-black" (click)="email()">
-                <i class="bi bi-envelope-at-fill"></i> Contact Me
+                <i class="bi bi-envelope-at-fill"></i> {{ 'cta.contactMe' | transloco }}
             </button>
             <button class="btn-secondary-cta-large" (click)="downloadCV()">
-                <i class="bi bi-file-earmark-pdf"></i> View Resume
+                <i class="bi bi-file-earmark-pdf"></i> {{ 'cta.viewResume' | transloco }}
             </button>
         </div>
         
         <div class="contact-info mt-4">
-            <p><b>personal:</b> srdzavala&#64;gmail.com</p>
-            <p><b>work:</b> contact&#64;sebastianrdz.com</p>
+            <p><b>{{ 'cta.personal' | transloco }}:</b> srdzavala&#64;gmail.com</p>
+            <p><b>{{ 'cta.work' | transloco }}:</b> contact&#64;sebastianrdz.com</p>
         </div>
     </div>
 
@@ -497,8 +493,8 @@
             <div class="card">
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p>"It works on my machine."</p>
-                        <footer class="blockquote-footer"><cite title="Every developer ever">Every developer ever</cite></footer>
+                        <p>"{{ 'cta.quote.text' | transloco }}"</p>
+                        <footer class="blockquote-footer"><cite title="{{ 'cta.quote.author' | transloco }}">{{ 'cta.quote.author' | transloco }}</cite></footer>
                     </blockquote>
                 </div>
             </div>

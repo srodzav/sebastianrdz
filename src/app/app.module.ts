@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NowComponent } from './pages/now/now.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { TranslocoRootModule } from './transloco.config';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslocoRootModule
   ],
   providers: [],
   bootstrap: [AppComponent]

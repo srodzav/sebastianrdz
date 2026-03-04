@@ -1,6 +1,7 @@
 import { Component, OnInit, Renderer2, Inject } from '@angular/core';
 import { ThemeService } from '../../services/theme.service';
 import { DOCUMENT } from '@angular/common';
+import { TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-nav-bar',
@@ -12,11 +13,13 @@ import { DOCUMENT } from '@angular/common';
 export class NavBarComponent implements OnInit {
 
   isDarkMode: boolean = false;
+  isSpanish: boolean = false;
 
   constructor(
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,
-    private themeService: ThemeService
+    private themeService: ThemeService,
+    private translocoService: TranslocoService
   ) {}
 
   ngOnInit() {
@@ -24,6 +27,10 @@ export class NavBarComponent implements OnInit {
       this.isDarkMode = isDark;
       this.updateTheme();
     });
+
+    const savedLanguage = localStorage.getItem('language') || 'en';
+    this.isSpanish = savedLanguage === 'es';
+    this.translocoService.setActiveLang(savedLanguage);
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
       if (!localStorage.getItem('theme')) {
@@ -38,6 +45,13 @@ export class NavBarComponent implements OnInit {
 
   toggleTheme() : void {
     this.themeService.toggleTheme();
+  }
+
+  toggleLanguage() : void {
+    this.isSpanish = !this.isSpanish;
+    const newLang = this.isSpanish ? 'es' : 'en';
+    localStorage.setItem('language', newLang);
+    this.translocoService.setActiveLang(newLang);
   }
 
   private updateTheme(): void {

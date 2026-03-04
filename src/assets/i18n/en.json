@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "home": "Home",
+    "resume": "Resume",
+    "aboutMe": "About me"
+  },
+  "hero": {
+    "openToWork": "💼 open to work",
+    "remoteFriendly": "🌎 remote friendly",
+    "roles": {
+      "softwareEngineer": "Software Engineer",
+      "fullStackDeveloper": "Full Stack Developer",
+      "problemSolver": "Software Developer"
+    },
+    "description": "I'm a Software Engineer who loves building web applications and learning along the way. I work on both frontend and backend, collaborate with others, and turning ideas into practical and solid solutions.",
+    "getInTouch": "Get in Touch",
+    "downloadCV": "Download CV",
+    "timezone": "Mexico City (GMT-6)"
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "description": "As a Software Engineer, my goal is to find the right balance between frameworks that allow me to create applications in the most efficient and user friendly way possible.",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "tools": "Tools",
+    "databases": "Databases"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "description": "A summary of my professional experience and education in the field of software development.",
+    "jobs": {
+      "gtim": {
+        "title": "Software Developer",
+        "company": "GTIM Software",
+        "duration": "Jan 2025 - Present",
+        "description": "Full Stack Software Developer working on enterprise level applications. Responsible for developing scalable frontend solutions and integrating them with backend services."
+      },
+      "bentho": {
+        "title": "Junior Software Developer",
+        "company": "Bentho Automation",
+        "duration": "Nov 2022 - Feb 2025",
+        "description": "Junior Software Developer focused on building and maintaining web applications."
+      },
+      "uaslp": {
+        "title": "Hardware Lab Intern",
+        "company": "Universidad Autónoma de San Luis Potosí",
+        "duration": "Jan 2022 - Jan 2023",
+        "description": "Worked with embedded systems and assisted students with practical electronics and programming tasks."
+      },
+      "degree": {
+        "title": "Computer Science Degree",
+        "company": "Universidad Autónoma de San Luis Potosí",
+        "duration": "Aug 2018 - Dec 2023",
+        "description": "Bachelor's Degree in Computer Science Engineering. Built a strong foundation in software engineering, algorithms, data structures, and system design."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "A selection of projects I've built, showcasing my skills in fullstack development.",
+    "liveDemo": "Live Demo",
+    "source": "Source",
+    "items": {
+      "medical": {
+        "title": "Medical Appointments System",
+        "description": "A fullstack web application for managing medical appointments and patient records."
+      },
+      "denue": {
+        "title": "DENUE Search",
+        "description": "An app that lets users search Mexico's DENUE database to explore nearby economic units, visualize them on a map."
+      },
+      "skull": {
+        "title": "3D Model Showcase",
+        "description": "A minimal 3D model showcase created using ThreeJS library."
+      },
+      "reviews": {
+        "title": "Movie Reviews",
+        "description": "A web app that provides my personal movie reviews."
+      },
+      "currency": {
+        "title": "Currency Converter",
+        "description": "A calculator that helps users convert between different currencies."
+      },
+      "tomasa": {
+        "title": "Tomasa3D",
+        "description": "A 3D model of my cat created using ThreeJS library."
+      }
+    }
+  },
+  "cta": {
+    "title": "Let's Work Together",
+    "description": "Feel free to reach out for opportunities or just to connect.",
+    "contactMe": "Contact Me",
+    "viewResume": "View Resume",
+    "personal": "personal",
+    "work": "work",
+    "quote": {
+      "text": "It works on my machine.",
+      "author": "Every developer ever"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A little more about who I am beyond the code",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content1": "My name is Sebastian. I'm 25 years old. I believe in taking care of myself and a balanced diet and rigorous exercise routine. I graduated from the Universidad Autónoma de San Luis Potosí, with a degree in Computer Science. I currently have three years of experience in web development.",
+        "content2": "My work has led me to focus on full stack development. I have a particular passion for front end (I also enjoy back end!). I'm motivated by creating solutions that make an impact, while staying open to opportunities for growth and innovation."
+      },
+      "hobbies": {
+        "title": "Hobbies & Lifestyle",
+        "content": "Outside of work, I have several hobbies, with gym and gaming being the ones I enjoy the most. I consider myself to live an active life.",
+        "tags": {
+          "gym": "Gym",
+          "gaming": "Gaming",
+          "camping": "Camping",
+          "movies": "Movies",
+          "travel": "Travel"
+        }
+      },
+      "cats": {
+        "title": "My Cats",
+        "content": "I have two cats that are part of my life:",
+        "kira": {
+          "name": "Kira",
+          "age": "6 years old"
+        },
+        "tomasa": {
+          "name": "Tomasa",
+          "age": "5 years old (dedicated a project to her!)"
+        }
+      },
+      "ai": {
+        "title": "What I Think About AI",
+        "content": "I believe AI is a powerful tool that it will never replace human creativity and problem solving. We can use it to automate repetitive tasks. As long as we use it responsibly, it can be a great tool."
+      },
+      "contact": {
+        "title": "Get In Touch",
+        "content": "If you have any comments or questions, feel free to reach out:",
+        "personal": "Personal inquiries",
+        "work": "Job inquiries"
+      },
+      "signature": {
+        "written": "written",
+        "updated": "updated"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Sebastian Rodriguez"
+  }
+}

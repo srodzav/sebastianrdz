@@ -23,7 +23,8 @@
     "languages": "Languages",
     "frameworks": "Frameworks",
     "tools": "Tools",
-    "databases": "Databases"
+    "databases": "Databases",
+    "devops": "DevOps & Infra"
   },
   "experience": {
     "title": "Work Experience",
@@ -105,7 +106,7 @@
     "sections": {
       "introduction": {
         "title": "Introduction",
-        "content1": "My name is Sebastian. I'm 25 years old. I believe in taking care of myself and a balanced diet and rigorous exercise routine. I graduated from the Universidad Autónoma de San Luis Potosí, with a degree in Computer Science. I currently have three years of experience in web development.",
+        "content1": "My name is Sebastian. I'm 26 years old. I believe in taking care of myself and a balanced diet and rigorous exercise routine. I graduated from the Universidad Autónoma de San Luis Potosí, with a degree in Computer Science. I currently have three years of experience in web development.",
         "content2": "My work has led me to focus on full stack development. I have a particular passion for front end (I also enjoy back end!). I'm motivated by creating solutions that make an impact, while staying open to opportunities for growth and innovation."
       },
       "hobbies": {

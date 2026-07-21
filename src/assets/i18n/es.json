@@ -23,7 +23,8 @@
     "languages": "Lenguajes",
     "frameworks": "Frameworks",
     "tools": "Herramientas",
-    "databases": "Bases de Datos"
+    "databases": "Bases de Datos",
+    "devops": "DevOps & Infra"
   },
   "experience": {
     "title": "Experiencia Laboral",
@@ -105,7 +106,7 @@
     "sections": {
       "introduction": {
         "title": "Introducción",
-        "content1": "Mi nombre es Sebastian. Tengo 25 años. Creo en cuidarme a mí mismo con una dieta balanceada y una rutina de ejercicio rigurosa. Me gradué de la Universidad Autónoma de San Luis Potosí, con un título en Ciencias de la Computación. Actualmente tengo tres años de experiencia en desarrollo web.",
+        "content1": "Mi nombre es Sebastian. Tengo 26 años. Creo en cuidarme a mí mismo con una dieta balanceada y una rutina de ejercicio rigurosa. Me gradué de la Universidad Autónoma de San Luis Potosí, con un título en Ciencias de la Computación. Actualmente tengo tres años de experiencia en desarrollo web.",
         "content2": "Mi trabajo me ha llevado a enfocarme en desarrollo full stack. Tengo una pasión particular por el front end (¡también disfruto el back end!). Me motiva crear soluciones que generen impacto, mientras me mantengo abierto a oportunidades de crecimiento e innovación."
       },
       "hobbies": {

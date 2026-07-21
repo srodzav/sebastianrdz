@@ -67,7 +67,7 @@ Follow these steps to set up the project on your local machine:
 
 **Sebastián Rodríguez**
 - [LinkedIn](https://www.linkedin.com/in/sebastian-rodriguez-zavala/)
-- [GitHub](https://github.com/srodzav)
+- [GitHub](https://github.com/sebastian-rdz)
 - [Email](mailto:contact@sebastianrdz.com)
 
 ---

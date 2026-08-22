@@ -5,9 +5,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-6 text-center mb-4 mb-md-0">
-                <img src="/assets/images/cv.jpg" class="hero-image" alt="Sebastian Rodriguez">
+                <img src="/assets/images/cv.jpg" class="hero-image" alt="Sebastian Rodriguez" />
 
-                <br><br><br>
+                <br /><br /><br />
 
                 <div class="status-badges-container">
                     <div class="status-badge">
@@ -18,18 +18,15 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-7 col-md-6">
-                
                 <h1 class="hero-title"><b>Sebastian Rodriguez</b></h1>
-                <h3 class="hero-subtitle">
-                    {{ typewriterText }}<span class="typewriter-cursor">|</span>
-                </h3>
-                
+                <h3 class="hero-subtitle">{{ typewriterText }}<span class="typewriter-cursor">|</span></h3>
+
                 <p class="hero-description mt-4">
                     {{ 'hero.description' | transloco }}
                 </p>
-                
+
                 <div class="cta-buttons mt-4">
                     <button class="btn-primary-cta-black" (click)="email()">
                         <i class="bi bi-envelope-at-fill"></i> {{ 'hero.getInTouch' | transloco }}
@@ -38,16 +35,19 @@
                         <i class="bi bi-download"></i> {{ 'hero.downloadCV' | transloco }}
                     </button>
                 </div>
-                
+
                 <div class="social-links mt-4">
-                    <button class="social-btn" (click)="goToLink('https://www.linkedin.com/in/sebastian-rodriguez-zavala/')">
+                    <button
+                        class="social-btn"
+                        (click)="goToLink('https://www.linkedin.com/in/sebastian-rodriguez-zavala/')"
+                    >
                         <i class="bi bi-linkedin"></i>
                     </button>
                     <button class="social-btn" (click)="goToLink('https://github.com/sebastian-rdz')">
                         <i class="bi bi-github"></i>
                     </button>
                 </div>
-                
+
                 <div class="timezone-info mt-3">
                     <small><i class="bi bi-clock"></i> {{ currentTime }} {{ 'hero.timezone' | transloco }}</small>
                 </div>
@@ -59,77 +59,61 @@
 <!-- Tech Stack Section -->
 <div class="section-container">
     <div class="container">
-        <h2 class="section-title"><b>{{ 'techStack.title' | transloco }}</b></h2>
+        <h2 class="section-title">
+            <b>{{ 'techStack.title' | transloco }}</b>
+        </h2>
         <p class="section-description">
             {{ 'techStack.description' | transloco }}
         </p>
 
         <div class="tech-stack-container">
-        <div class="tech-section">
-            <h5><b>{{ 'techStack.languages' | transloco }}</b></h5>
-            <div class="tech-badges">
-                <span class="tech-badge">
-                    <i class="devicon-csharp-plain colored"></i> C#
-                </span>
-                <span class="tech-badge">
-                    <i class="devicon-javascript-plain colored"></i>JavaScript
-                </span>
-                <span class="tech-badge">
-                    <i class="devicon-typescript-plain colored"></i> TypeScript
-                </span>
-                <span class="tech-badge">
-                    <i class="devicon-php-plain colored"></i> PHP
-                </span>
+            <div class="tech-section">
+                <h5>
+                    <b>{{ 'techStack.languages' | transloco }}</b>
+                </h5>
+                <div class="tech-badges">
+                    <span class="tech-badge"> <i class="devicon-csharp-plain colored"></i> C# </span>
+                    <span class="tech-badge"> <i class="devicon-javascript-plain colored"></i>JavaScript </span>
+                    <span class="tech-badge"> <i class="devicon-typescript-plain colored"></i> TypeScript </span>
+                    <span class="tech-badge"> <i class="devicon-php-plain colored"></i> PHP </span>
+                </div>
             </div>
-        </div>
 
-        <div class="tech-section">
-            <h5><b>{{ 'techStack.frameworks' | transloco }}</b></h5>
-            <div class="tech-badges">
-                <span class="tech-badge">
-                    <i class="devicon-dotnetcore-plain colored"></i> .NET
-                </span>
-                <span class="tech-badge">
-                    <i class="devicon-angularjs-plain colored"></i> Angular
-                </span>
-                <span class="tech-badge">
-                    <i class="devicon-react-original colored"></i> React
-                </span>
-                <span class="tech-badge">
-                    <i class="devicon-laravel-plain colored"></i> Laravel
-                </span>
+            <div class="tech-section">
+                <h5>
+                    <b>{{ 'techStack.frameworks' | transloco }}</b>
+                </h5>
+                <div class="tech-badges">
+                    <span class="tech-badge"> <i class="devicon-dotnetcore-plain colored"></i> .NET </span>
+                    <span class="tech-badge"> <i class="devicon-angularjs-plain colored"></i> Angular </span>
+                    <span class="tech-badge"> <i class="devicon-react-original colored"></i> React </span>
+                    <span class="tech-badge"> <i class="devicon-laravel-plain colored"></i> Laravel </span>
+                </div>
             </div>
-        </div>
 
-        <div class="tech-section">
-            <h5><b>{{ 'techStack.devops' | transloco }}</b></h5>
-            <div class="tech-badges">
-                <span class="tech-badge">
-                    <i class="devicon-azuredevops-plain colored"></i> Azure
-                </span>
-                <span class="tech-badge">
-                    <i class="devicon-docker-plain colored"></i> Docker
-                </span>
-                <span class="tech-badge">
-                    <i class="devicon-githubactions-plain colored"></i> GitHub Actions
-                </span>
-                <span class="tech-badge">
-                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS
-                </span>
+            <div class="tech-section">
+                <h5>
+                    <b>{{ 'techStack.devops' | transloco }}</b>
+                </h5>
+                <div class="tech-badges">
+                    <span class="tech-badge"> <i class="devicon-azuredevops-plain colored"></i> Azure </span>
+                    <span class="tech-badge"> <i class="devicon-docker-plain colored"></i> Docker </span>
+                    <span class="tech-badge"> <i class="devicon-githubactions-plain colored"></i> GitHub Actions </span>
+                    <span class="tech-badge">
+                        <i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS
+                    </span>
+                </div>
             </div>
-        </div>
 
-        <div class="tech-section">
-            <h5><b>{{ 'techStack.databases' | transloco }}</b></h5>
-            <div class="tech-badges">
-                <span class="tech-badge">
-                    <i class="devicon-azuresqldatabase-plain colored"></i> SQL Server
-                </span>
-                <span class="tech-badge">
-                    <i class="devicon-postgresql-plain colored"></i> PostgreSQL
-                </span>
+            <div class="tech-section">
+                <h5>
+                    <b>{{ 'techStack.databases' | transloco }}</b>
+                </h5>
+                <div class="tech-badges">
+                    <span class="tech-badge"> <i class="devicon-azuresqldatabase-plain colored"></i> SQL Server </span>
+                    <span class="tech-badge"> <i class="devicon-postgresql-plain colored"></i> PostgreSQL </span>
+                </div>
             </div>
-        </div>
         </div>
     </div>
 </div>
@@ -137,7 +121,9 @@
 <!-- Work Experience Section -->
 <div class="section-container experience-section">
     <div class="container">
-        <h2 class="section-title"><b>{{ 'experience.title' | transloco }}</b></h2>
+        <h2 class="section-title">
+            <b>{{ 'experience.title' | transloco }}</b>
+        </h2>
         <p class="section-description">
             {{ 'experience.description' | transloco }}
         </p>
@@ -145,7 +131,38 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h4 class="experience-title"><b>{{ 'experience.jobs.gtim.title' | transloco }}</b></h4>
+                        <h4 class="experience-title">
+                            <b>{{ 'experience.jobs.trellint.title' | transloco }}</b>
+                        </h4>
+                        <p class="experience-company">{{ 'experience.jobs.trellint.company' | transloco }}</p>
+                    </div>
+                    <span class="experience-duration">{{ 'experience.jobs.trellint.duration' | transloco }}</span>
+                </div>
+                <div class="experience-description">
+                    <p>
+                        {{ 'experience.jobs.trellint.description' | transloco }}
+                    </p>
+                    <div class="experience-highlights">
+                        <span class="tech-badge"> <i class="devicon-dotnetcore-plain colored"></i> .NET </span>
+                        <span class="tech-badge"> <i class="devicon-blazor-original"></i> Blazor </span>
+                        <span class="tech-badge">
+                            <i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS
+                        </span>
+                        <span class="tech-badge"> <i class="devicon-azuredevops-plain colored"></i> Azure </span>
+                        <span class="tech-badge">
+                            <i class="devicon-azuresqldatabase-plain colored"></i> SQL Server
+                        </span>
+                        <span class="tech-badge"> <i class="devicon-jira-plain colored"></i> Jira </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h4 class="experience-title">
+                            <b>{{ 'experience.jobs.gtim.title' | transloco }}</b>
+                        </h4>
                         <p class="experience-company">{{ 'experience.jobs.gtim.company' | transloco }}</p>
                     </div>
                     <span class="experience-duration">{{ 'experience.jobs.gtim.duration' | transloco }}</span>
@@ -155,24 +172,14 @@
                         {{ 'experience.jobs.gtim.description' | transloco }}
                     </p>
                     <div class="experience-highlights">
-                        <span class="tech-badge">
-                            <i class="devicon-dotnetcore-plain colored"></i> .NET
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-angularjs-plain colored"></i> Angular
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-azuredevops-plain colored"></i> Azure
-                        </span>
+                        <span class="tech-badge"> <i class="devicon-dotnetcore-plain colored"></i> .NET </span>
+                        <span class="tech-badge"> <i class="devicon-angularjs-plain colored"></i> Angular </span>
+                        <span class="tech-badge"> <i class="devicon-azuredevops-plain colored"></i> Azure </span>
                         <span class="tech-badge">
                             <i class="devicon-azuresqldatabase-plain colored"></i> SQL Server
                         </span>
-                        <span class="tech-badge">
-                            <i class="devicon-postman-plain colored"></i> Postman
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-docker-plain colored"></i> Docker
-                        </span>
+                        <span class="tech-badge"> <i class="devicon-postman-plain colored"></i> Postman </span>
+                        <span class="tech-badge"> <i class="devicon-docker-plain colored"></i> Docker </span>
                     </div>
                 </div>
             </div>
@@ -180,7 +187,9 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h4 class="experience-title"><b>{{ 'experience.jobs.bentho.title' | transloco }}</b></h4>
+                        <h4 class="experience-title">
+                            <b>{{ 'experience.jobs.bentho.title' | transloco }}</b>
+                        </h4>
                         <p class="experience-company">{{ 'experience.jobs.bentho.company' | transloco }}</p>
                     </div>
                     <span class="experience-duration">{{ 'experience.jobs.bentho.duration' | transloco }}</span>
@@ -190,21 +199,11 @@
                         {{ 'experience.jobs.bentho.description' | transloco }}
                     </p>
                     <div class="experience-highlights">
-                        <span class="tech-badge">
-                            <i class="devicon-angularjs-plain colored"></i> Angular
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-laravel-plain colored"></i> Laravel
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-jira-plain colored"></i> Jira
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-postgresql-plain colored"></i> PostgreSQL
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-bitbucket-plain colored"></i> Bitbucket
-                        </span>
+                        <span class="tech-badge"> <i class="devicon-angularjs-plain colored"></i> Angular </span>
+                        <span class="tech-badge"> <i class="devicon-laravel-plain colored"></i> Laravel </span>
+                        <span class="tech-badge"> <i class="devicon-jira-plain colored"></i> Jira </span>
+                        <span class="tech-badge"> <i class="devicon-postgresql-plain colored"></i> PostgreSQL </span>
+                        <span class="tech-badge"> <i class="devicon-bitbucket-plain colored"></i> Bitbucket </span>
                     </div>
                 </div>
             </div>
@@ -212,7 +211,9 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h4 class="experience-title"><b>{{ 'experience.jobs.uaslp.title' | transloco }}</b></h4>
+                        <h4 class="experience-title">
+                            <b>{{ 'experience.jobs.uaslp.title' | transloco }}</b>
+                        </h4>
                         <p class="experience-company">{{ 'experience.jobs.uaslp.company' | transloco }}</p>
                     </div>
                     <span class="experience-duration">{{ 'experience.jobs.uaslp.duration' | transloco }}</span>
@@ -222,26 +223,20 @@
                         {{ 'experience.jobs.uaslp.description' | transloco }}
                     </p>
                     <div class="experience-highlights">
-                        <span class="tech-badge">
-                            <i class="devicon-csharp-plain colored"></i> C#
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-cplusplus-plain colored"></i> C++
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-arduino-plain colored"></i> Arduino
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-linux-plain colored"></i> Linux
-                        </span>
+                        <span class="tech-badge"> <i class="devicon-csharp-plain colored"></i> C# </span>
+                        <span class="tech-badge"> <i class="devicon-cplusplus-plain colored"></i> C++ </span>
+                        <span class="tech-badge"> <i class="devicon-arduino-plain colored"></i> Arduino </span>
+                        <span class="tech-badge"> <i class="devicon-linux-plain colored"></i> Linux </span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h4 class="experience-title"><b>{{ 'experience.jobs.degree.title' | transloco }}</b></h4>
+                        <h4 class="experience-title">
+                            <b>{{ 'experience.jobs.degree.title' | transloco }}</b>
+                        </h4>
                         <p class="experience-company">{{ 'experience.jobs.degree.company' | transloco }}</p>
                     </div>
                     <span class="experience-duration">{{ 'experience.jobs.degree.duration' | transloco }}</span>
@@ -249,15 +244,9 @@
                 <div class="experience-description">
                     <p>{{ 'experience.jobs.degree.description' | transloco }}</p>
                     <div class="experience-highlights">
-                        <span class="tech-badge">
-                            <i class="devicon-csharp-plain colored"></i> C#
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-javascript-plain colored"></i> JavaScript
-                        </span>
-                        <span class="tech-badge">
-                            <i class="devicon-typescript-plain colored"></i> TypeScript
-                        </span>
+                        <span class="tech-badge"> <i class="devicon-csharp-plain colored"></i> C# </span>
+                        <span class="tech-badge"> <i class="devicon-javascript-plain colored"></i> JavaScript </span>
+                        <span class="tech-badge"> <i class="devicon-typescript-plain colored"></i> TypeScript </span>
                     </div>
                 </div>
             </div>
@@ -268,11 +257,13 @@
 <!-- Projects Section -->
 <div class="section-container projects-section">
     <div class="container">
-        <h2 class="section-title"><b>{{ 'projects.title' | transloco }}</b></h2>
+        <h2 class="section-title">
+            <b>{{ 'projects.title' | transloco }}</b>
+        </h2>
         <p class="section-description">
             {{ 'projects.description' | transloco }}
         </p>
-        
+
         <div class="row g-4">
             <!-- Medical Appointments System -->
             <div class="col-xl-4 col-lg-6 col-md-6 col-12">
@@ -281,7 +272,9 @@
                         <img src="/assets/images/medical.png" class="project-image" alt="Medical Appointments System" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">🏭 <b>{{ 'projects.items.medical.title' | transloco }}</b></h4>
+                        <h4 class="project-title">
+                            🏭 <b>{{ 'projects.items.medical.title' | transloco }}</b>
+                        </h4>
                         <p class="project-description">
                             {{ 'projects.items.medical.description' | transloco }}
                         </p>
@@ -296,7 +289,10 @@
                             <button class="btn-project-primary" (click)="goToLink('https://demo.sebastianrdz.com')">
                                 <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
-                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/sebastian-rdz/medical-appointments-system')">
+                            <button
+                                class="btn-project-secondary"
+                                (click)="goToLink('https://github.com/sebastian-rdz/medical-appointments-system')"
+                            >
                                 <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
@@ -311,11 +307,15 @@
                         <img src="/assets/images/inegi.png" class="project-image" alt="DENUE Search Project" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">📍 <b>{{ 'projects.items.denue.title' | transloco }}</b></h4>
+                        <h4 class="project-title">
+                            📍 <b>{{ 'projects.items.denue.title' | transloco }}</b>
+                        </h4>
                         <p class="project-description">
                             {{ 'projects.items.denue.description' | transloco }}
+                        </p>
+
                         <div class="project-tags">
-                            <span class="project-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                            <span class="project-tag"><i class="devicon-react-original colored"></i> React</span>
                             <span class="project-tag"><i class="devicon-dotnetcore-plain colored"></i> .NET</span>
                             <span class="project-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
                         </div>
@@ -323,7 +323,10 @@
                             <button class="btn-project-primary" (click)="goToLink('https://denue.sebastianrdz.com')">
                                 <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
-                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/sebastian-rdz/inegi')">
+                            <button
+                                class="btn-project-secondary"
+                                (click)="goToLink('https://github.com/sebastian-rdz/inegi')"
+                            >
                                 <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
@@ -338,7 +341,9 @@
                         <img src="/assets/images/skull3d.png" class="project-image" alt="Skull3D Project" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">💀 <b>{{ 'projects.items.skull.title' | transloco }}</b></h4>
+                        <h4 class="project-title">
+                            💀 <b>{{ 'projects.items.skull.title' | transloco }}</b>
+                        </h4>
                         <p class="project-description">
                             {{ 'projects.items.skull.description' | transloco }}
                         </p>
@@ -352,7 +357,10 @@
                             <button class="btn-project-primary" (click)="goToLink('https://kannssai.sebastianrdz.com')">
                                 <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
-                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/sebastian-rdz/skull3d')">
+                            <button
+                                class="btn-project-secondary"
+                                (click)="goToLink('https://github.com/sebastian-rdz/skull3d')"
+                            >
                                 <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
@@ -367,7 +375,9 @@
                         <img src="/assets/images/reviews.png" class="project-image" alt="Movie Reviews Project" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">🎬 <b>{{ 'projects.items.reviews.title' | transloco }}</b></h4>
+                        <h4 class="project-title">
+                            🎬 <b>{{ 'projects.items.reviews.title' | transloco }}</b>
+                        </h4>
                         <p class="project-description">
                             {{ 'projects.items.reviews.description' | transloco }}
                         </p>
@@ -382,7 +392,10 @@
                             <button class="btn-project-primary" (click)="goToLink('https://reviews.sebastianrdz.com')">
                                 <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
-                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/sebastian-rdz/reviews')">
+                            <button
+                                class="btn-project-secondary"
+                                (click)="goToLink('https://github.com/sebastian-rdz/reviews')"
+                            >
                                 <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
@@ -397,7 +410,9 @@
                         <img src="/assets/images/currency.png" class="project-image" alt="Currency Converter Project" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">💵 <b>{{ 'projects.items.currency.title' | transloco }}</b></h4>
+                        <h4 class="project-title">
+                            💵 <b>{{ 'projects.items.currency.title' | transloco }}</b>
+                        </h4>
                         <p class="project-description">
                             {{ 'projects.items.currency.description' | transloco }}
                         </p>
@@ -411,7 +426,10 @@
                             <button class="btn-project-primary" (click)="goToLink('https://currency.sebastianrdz.com')">
                                 <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
-                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/sebastian-rdz/currency-converter')">
+                            <button
+                                class="btn-project-secondary"
+                                (click)="goToLink('https://github.com/sebastian-rdz/currency-converter')"
+                            >
                                 <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
@@ -426,7 +444,9 @@
                         <img src="/assets/images/tomasa.jpg" class="project-image" alt="Tomasa3D Project" />
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">🐈‍⬛ <b>{{ 'projects.items.tomasa.title' | transloco }}</b></h4>
+                        <h4 class="project-title">
+                            🐈‍⬛ <b>{{ 'projects.items.tomasa.title' | transloco }}</b>
+                        </h4>
                         <p class="project-description">
                             {{ 'projects.items.tomasa.description' | transloco }}
                         </p>
@@ -440,14 +460,16 @@
                             <button class="btn-project-primary" (click)="goToLink('https://tomasa3d.sebastianrdz.com')">
                                 <i class="bi bi-box-arrow-up-right"></i> {{ 'projects.liveDemo' | transloco }}
                             </button>
-                            <button class="btn-project-secondary" (click)="goToLink('https://github.com/sebastian-rdz/tomasa3D')">
+                            <button
+                                class="btn-project-secondary"
+                                (click)="goToLink('https://github.com/sebastian-rdz/tomasa3D')"
+                            >
                                 <i class="bi bi-github"></i> {{ 'projects.source' | transloco }}
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
@@ -455,9 +477,11 @@
 <!-- CTA Section -->
 <div class="cta-section">
     <div class="container text-center">
-        <h2 class="cta-title"><b>{{ 'cta.title' | transloco }}</b></h2>
+        <h2 class="cta-title">
+            <b>{{ 'cta.title' | transloco }}</b>
+        </h2>
         <p class="cta-description">{{ 'cta.description' | transloco }}</p>
-        
+
         <div class="cta-buttons-large mt-4">
             <button class="btn-primary-cta-large-black" (click)="email()">
                 <i class="bi bi-envelope-at-fill"></i> {{ 'cta.contactMe' | transloco }}
@@ -466,10 +490,14 @@
                 <i class="bi bi-file-earmark-pdf"></i> {{ 'cta.viewResume' | transloco }}
             </button>
         </div>
-        
+
         <div class="contact-info mt-4">
-            <p><b>{{ 'cta.personal' | transloco }}:</b> srdzavala&#64;gmail.com</p>
-            <p><b>{{ 'cta.work' | transloco }}:</b> contact&#64;sebastianrdz.com</p>
+            <p>
+                <b>{{ 'cta.personal' | transloco }}:</b> srdzavala&#64;gmail.com
+            </p>
+            <p>
+                <b>{{ 'cta.work' | transloco }}:</b> contact&#64;sebastianrdz.com
+            </p>
         </div>
     </div>
 
@@ -479,7 +507,11 @@
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
                         <p>"{{ 'cta.quote.text' | transloco }}"</p>
-                        <footer class="blockquote-footer"><cite title="{{ 'cta.quote.author' | transloco }}">{{ 'cta.quote.author' | transloco }}</cite></footer>
+                        <footer class="blockquote-footer">
+                            <cite title="{{ 'cta.quote.author' | transloco }}">{{
+                                'cta.quote.author' | transloco
+                            }}</cite>
+                        </footer>
                     </blockquote>
                 </div>
             </div>
